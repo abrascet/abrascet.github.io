@@ -1,15 +1,6 @@
 <!doctype html>
-<html lang="hu">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Gábor Bata">
-    <meta name="description" content="xyz">
-    <title>Ábrás Cet</title>
-    <link rel="stylesheet" href="asset/css/abrascet.css">
-    <link rel="shortcut icon" href="asset/img/icon/favicon.png" />
-</head>
-
+<html lang="<%= @model['site']['lang'] %>">
+<%= render "header.erb" %>
 <body>
     <main class="wrapper">
         <nav class="navigation">
@@ -21,7 +12,7 @@
                         </g>
                     </svg>
                     &nbsp;
-                    <h1 class="title">Ábrás Cet</h1>
+                    <h1 class="title"><%= @model['site']['name'] %></h1>
                 </a>
                 <ul class="navigation-list float-right">
                     <li class="navigation-item">
@@ -43,16 +34,7 @@
                 </ul>
             </p>
         </section>
-        <footer class="footer">
-    <section class="container">
-        <p>
-            &copy; 2018 Gábor Bata.
-            Az Ábrás Cet oldalon található tartalmak a
-            <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.hu" target="_blank">Creative Commons Nevezd meg! - Ne add el! 3.0 Unported (CC BY-NC 3.0)</a> licenc alatt vannak.
-        </p>
-    </section>
-</footer>
-
+        <%= render "footer.erb" %>
     </main>
 </body>
 </html>
