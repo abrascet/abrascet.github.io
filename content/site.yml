@@ -1,0 +1,16 @@
+---
+site:
+  lang: hu
+  name: &name Ábrás Cet
+  description: xyz
+  author: Gábor Bata
+navigation:
+  home:
+    title: *name
+  images:
+    title: Rajzok
+    folder: rajz
+  archive:
+    title: Archív
+  about:
+    title:

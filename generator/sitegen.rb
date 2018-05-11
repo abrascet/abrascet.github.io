@@ -47,8 +47,8 @@ class Page
   end
 end
 
-common_model = YAML.load_file("../content/common.yml")
-model = common_model.merge({})
+site_model = YAML.load_file("../content/site.yml")
+model = site_model.merge({})
 
 page = Page.new("id", model)
 content = page.render("home.erb")
