@@ -31,13 +31,12 @@ require 'yaml'
 
 # Class representing a page
 class Page
-  def initialize(id, template, model)
+  def initialize(id, template, model, folder = nil)
     @id = id
     @template = template
     @model = model
-    @folder = model['folder']
+    @folder = folder
     @href = @folder ? "#{@folder}/#{@id}.html" : "#{@id}.html"
-    @root = @folder ? "../" : ""
   end
 
   def render(template_path = @template)
@@ -50,7 +49,7 @@ class Page
   end
 
   def href(href)
-    "#{@root}#{href}"
+    "#{@folder ? '../' : ''}#{href}"
   end
 
   def write
@@ -68,6 +67,6 @@ model = site_model.merge({})
 page = Page.new("index", "home.erb", model)
 page.write
 
-model = site_model.merge({'folder' => 'abra'})
-page = Page.new("index", "home.erb", model)
+model = site_model.merge({})
+page = Page.new("index", "home.erb", model, "abra")
 page.write
