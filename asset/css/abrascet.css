@@ -1,10 +1,10 @@
 /*! Pangolin Regular WebFont,  Copyright 2016 The Pangolin Project Authors (https://github.com/googlefonts/pangolin)*/
 @font-face {
     font-family: 'Pangolin-Regular';
-    src:url('../font/Pangolin-Regular.ttf.woff') format('woff'),
-        url('../font/Pangolin-Regular.ttf.svg#Pangolin-Regular') format('svg'),
-        url('../font/Pangolin-Regular.ttf.eot'),
-        url('../font/Pangolin-Regular.ttf.eot?#iefix') format('embedded-opentype');
+    src:url('../font/pangolin-regular.ttf.woff') format('woff'),
+        url('../font/pangolin-regular.ttf.svg#Pangolin-Regular') format('svg'),
+        url('../font/pangolin-regular.ttf.eot'),
+        url('../font/pangolin-regular.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
