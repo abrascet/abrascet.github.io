@@ -31,27 +31,43 @@ require 'yaml'
 
 # Class representing a page
 class Page
-
-  def initialize(id, model)
+  def initialize(id, template, model)
     @id = id
+    @template = template
     @model = model
+    @folder = model['folder']
+    @href = @folder ? "#{@folder}/#{@id}.html" : "#{@id}.html"
+    @root = @folder ? "../" : ""
   end
 
-  def render(path)
+  def render(template_path = @template)
     template_content = nil
-    File.open(File.expand_path("../template/#{path}"), "r:UTF-8") do |file|
+    File.open(File.expand_path("../template/#{template_path}"), "r:UTF-8") do |file|
       template_content = file.read
     end
     template = ERB.new(template_content)
     template.result(binding)
   end
+
+  def href(href)
+    "#{@root}#{href}"
+  end
+
+  def write
+    content = render
+    Dir.mkdir("../#{@folder}") if @folder && !Dir.exist?("../#{@folder}")
+    File.open(File.expand_path("../#{@href}"), "w:UTF-8") do |file|
+      file.write(content)
+    end
+  end
 end
 
 site_model = YAML.load_file("../content/site.yml")
-model = site_model.merge({})
 
-page = Page.new("id", model)
-content = page.render("home.erb")
-File.open(File.expand_path("../index.html"), "w:UTF-8") do |file|
-  file.write(content)
-end
+model = site_model.merge({})
+page = Page.new("index", "home.erb", model)
+page.write
+
+model = site_model.merge({'folder' => 'abra'})
+page = Page.new("index", "home.erb", model)
+page.write
