@@ -27,16 +27,19 @@
 # encoding: UTF-8
 
 require "erb"
-require 'yaml'
+require "yaml"
 
 # Class representing a page
 class Page
+
+  attr_reader :id, :template, :model, :folder, :link
+
   def initialize(id, template, model, folder = nil)
     @id = id
     @template = template
     @model = model
     @folder = folder
-    @href = @folder ? "#{@folder}/#{@id}.html" : "#{@id}.html"
+    @link = @folder ? "#{@folder}/#{@id}.html" : "#{@id}.html"
   end
 
   def render(template_path = @template)
@@ -49,24 +52,53 @@ class Page
   end
 
   def href(href)
-    "#{@folder ? '../' : ''}#{href}"
+    href.start_with?("#{@folder}/") ? href.sub("#{@folder}/", "") : "#{@folder ? "../" : ""}#{href}"
   end
 
   def write
+    puts "Writing: id:#{@id}, template:#{@template}, link:#{@link}"
     content = render("layout.erb")
     Dir.mkdir("../#{@folder}") if @folder && !Dir.exist?("../#{@folder}")
-    File.open(File.expand_path("../#{@href}"), "w:UTF-8") do |file|
+    File.open(File.expand_path("../#{@link}"), "w:UTF-8") do |file|
       file.write(content)
     end
   end
 end
 
+def get_home_page(site_model, image_pages)
+  model = site_model.merge({})
+  page = Page.new("index", "home.erb", model)
+end
+
+def get_archive_page(site_model, image_pages)
+  return nil
+end
+
+def get_about_page(site_model)
+  return nil
+end
+
+def get_image_pages(site_model)
+  pages = []
+  previous_page = nil
+  YAML.load_file("../content/images.yml").each do |key, model|
+    current_page = Page.new(key, "image.erb", site_model.merge(model), "abra")
+    if previous_page
+      current_page.model["prev"] = previous_page
+      previous_page.model["next"] = current_page
+    end
+    previous_page = current_page
+    pages.push(current_page)
+  end
+  return pages
+end
+
 site_model = YAML.load_file("../content/site.yml")
+image_pages = get_image_pages(site_model)
+home_page = get_home_page(site_model, image_pages)
+archive_page = get_archive_page(site_model, image_pages)
+about_page = get_about_page(site_model)
 
-model = site_model.merge({})
-page = Page.new("index", "home.erb", model)
-page.write
-
-model = site_model.merge({})
-page = Page.new("index", "home.erb", model, "abra")
-page.write
+(image_pages + [home_page, archive_page, about_page]).each do |page|
+  page.write if page
+end
