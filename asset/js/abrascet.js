@@ -1,23 +1,22 @@
-/*! Copyright (c) 2018 abrascet */
+/*! Abras Cet, Copyright 2018 Gabor Bata */
 (function() {
-  var navToggle = document.getElementById("navigation-toggle");
-  var navList = document.getElementById("navigation-list");
-  navToggle.addEventListener("click", toggleHandler);
-  window.addEventListener("resize", resizeHandler);
+  var navigationToggle = document.getElementById("navigation-toggle");
+  var navigationList = document.getElementById("navigation-list");
+  navigationToggle.addEventListener("click", navigationToggleHandler);
+  window.addEventListener("resize", navigationResizeHandler);
 
-  function toggleHandler(event) {
+  function navigationToggleHandler(event) {
     event.preventDefault();
-    if (navList.style.display === "none") {
-      navList.style.display = "block";
+    if (navigationList.style.display === "none") {
+      navigationList.style.display = "block";
     } else {
-      navList.style.display = "none";
+      navigationList.style.display = "none";
     }
   }
 
-  function resizeHandler(event) {
-    if (navToggle.style.display === "none") {
-      navList.style.display = "block";
+  function navigationResizeHandler() {
+    if (navigationToggle.style.display === "none") {
+      navigationList.style.display = "block";
     }
   }
-
 })();
