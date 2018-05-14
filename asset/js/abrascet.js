@@ -2,12 +2,21 @@
 (function() {
   var navigationToggle = document.getElementById("navigation-toggle");
   var navigationList = document.getElementById("navigation-list");
-  navigationToggle.addEventListener("click", navigationToggleHandler);
-  window.addEventListener("resize", navigationResizeHandler);
+
+  // based on: https://www.quirksmode.org/dom/getstyles.html#link7
+  function getDisplayStyle(element) {
+    var displayStyle;
+    if (element.currentStyle) {
+      displayStyle = element.currentStyle.display;
+    } else if (window.getComputedStyle) {
+      displayStyle = window.getComputedStyle(element, null).getPropertyValue("display");
+    }
+    return displayStyle;
+  }
 
   function navigationToggleHandler(event) {
     event.preventDefault();
-    if (navigationList.style.display === "none") {
+    if (getDisplayStyle(navigationList) === "none") {
       navigationList.style.display = "block";
     } else {
       navigationList.style.display = "none";
@@ -15,8 +24,14 @@
   }
 
   function navigationResizeHandler() {
-    if (navigationToggle.style.display === "none") {
+    if (getDisplayStyle(navigationToggle) === "none") {
       navigationList.style.display = "block";
+    } else {
+      navigationList.style.display = "none";
     }
   }
+
+  navigationToggle.addEventListener("click", navigationToggleHandler);
+  window.addEventListener("resize", navigationResizeHandler);
+
 })();
