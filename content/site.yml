@@ -2,6 +2,11 @@
 site:
   lang: hu
   locale: hu_HU
-  name: Ábrás Cet
+  name: &siteName Ábrás Cet
   description: Ábrák, képek, rajzok
   author: Bata Gábor
+navigation:
+  home: *siteName
+  images: Képek
+  archive: Archív
+  about: A cetről

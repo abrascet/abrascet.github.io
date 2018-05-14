@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# sitegen.rb - a static site generator
+# sitegen.rb - a simple static site generator
 #
 # Abras Cet, Copyright 2018 Gabor Bata
 #
@@ -52,11 +52,18 @@ class Page
   end
 
   def href(href)
-    href.start_with?("#{@folder}/") ? href.sub("#{@folder}/", "") : "#{@folder ? "../" : ""}#{href}"
+    if ["../index.html", "index.html"].include?(href)
+      "/"
+    elsif href.start_with?("#{@folder}/")
+      href.sub("#{@folder}/", "")
+    else
+      "#{@folder ? "../" : ""}#{href}"
+    end
   end
 
-  def write
+  def generate(site_model)
     puts "Writing: id:#{@id}, template:#{@template}, link:#{@link}"
+    @model = site_model.merge(@model)
     content = render("layout.erb")
     Dir.mkdir("../#{@folder}") if @folder && !Dir.exist?("../#{@folder}")
     File.open(File.expand_path("../#{@link}"), "w:UTF-8") do |file|
@@ -65,24 +72,26 @@ class Page
   end
 end
 
-def get_home_page(site_model, image_pages)
-  model = site_model.merge({})
+def create_home_page()
+  model = {}
   page = Page.new("index", "home.erb", model)
 end
 
-def get_archive_page(site_model, image_pages)
-  return nil
+def create_archive_page(image_pages)
+  model = {}
+  page = Page.new("archiv", "archive.erb", model)
 end
 
-def get_about_page(site_model)
-  return nil
+def create_about_page()
+  model = {}
+  page = Page.new("a-cetrol", "about.erb", model)
 end
 
-def get_image_pages(site_model)
+def create_image_pages()
   pages = []
   previous_page = nil
   YAML.load_file("../content/images.yml").each do |key, model|
-    current_page = Page.new(key, "image.erb", site_model.merge(model), "abra")
+    current_page = Page.new(key, "image.erb", model, "abra")
     if previous_page
       current_page.model["prev"] = previous_page
       previous_page.model["next"] = current_page
@@ -93,12 +102,22 @@ def get_image_pages(site_model)
   return pages
 end
 
-site_model = YAML.load_file("../content/site.yml")
-image_pages = get_image_pages(site_model)
-home_page = get_home_page(site_model, image_pages)
-archive_page = get_archive_page(site_model, image_pages)
-about_page = get_about_page(site_model)
+# Create pages
+image_pages = create_image_pages()
+home_page = create_home_page()
+archive_page = create_archive_page(image_pages)
+about_page = create_about_page()
 
+# Load site model
+site_model = YAML.load_file("../content/site.yml")
+site_model["pages"] = {
+  "home" => home_page,
+  "images" => image_pages[0],
+  "archive" => archive_page,
+  "about" => about_page
+}
+
+# Generate pages
 (image_pages + [home_page, archive_page, about_page]).each do |page|
-  page.write if page
+  page.generate(site_model) if page
 end
