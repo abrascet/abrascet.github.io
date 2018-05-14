@@ -53,7 +53,7 @@ class Page
   end
 
   def write
-    content = render
+    content = render("layout.erb")
     Dir.mkdir("../#{@folder}") if @folder && !Dir.exist?("../#{@folder}")
     File.open(File.expand_path("../#{@href}"), "w:UTF-8") do |file|
       file.write(content)

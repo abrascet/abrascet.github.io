@@ -1,6 +1,7 @@
 ---
 site:
   lang: hu
+  locale: hu_HU
   name: Ábrás Cet
-  description: xyz
-  author: Gábor Bata
+  description: Ábrák, képek, rajzok
+  author: Bata Gábor

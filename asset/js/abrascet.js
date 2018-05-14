@@ -2,11 +2,11 @@
 (function() {
   var navToggle = document.getElementById("navigation-toggle");
   var navList = document.getElementById("navigation-list");
-  navToggle.addEventListener('click', toggleHandler);
-  window.addEventListener('resize', resizeHandler);
+  navToggle.addEventListener("click", toggleHandler);
+  window.addEventListener("resize", resizeHandler);
 
-	function toggleHandler(event) {
-		event.preventDefault();
+  function toggleHandler(event) {
+    event.preventDefault();
     if (navList.style.display === "none") {
       navList.style.display = "block";
     } else {
