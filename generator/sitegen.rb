@@ -51,8 +51,8 @@ class Page
     template.result(binding)
   end
 
-  def absolute_url
-    @link == "index.html" ? "/" : "/#{@link}"
+  def absolute_url(domain, link = @link)
+    @link == link ? "#{domain}/" : "#{domain}/#{link}"
   end
 
   def href(href)
@@ -66,7 +66,7 @@ class Page
   end
 
   def generate(site_model)
-    puts "Writing: id:#{@id}, template:#{@template}, link:#{@link}"
+    puts "Generating: id:#{@id}, template:#{@template}, link:#{@link}"
     @model = site_model.merge(@model)
     content = render("layout.erb")
     Dir.mkdir("../#{@folder}") if @folder && !Dir.exist?("../#{@folder}")
@@ -77,17 +77,17 @@ class Page
 end
 
 def create_home_page()
-  model = {}
+  model = YAML.load_file("../content/home.yml")
   page = Page.new("index", "home.erb", model)
 end
 
 def create_archive_page(image_pages)
-  model = {}
+  model = YAML.load_file("../content/archive.yml")
   page = Page.new("archiv", "archive.erb", model)
 end
 
 def create_about_page()
-  model = {}
+  model = YAML.load_file("../content/about.yml")
   page = Page.new("a-cetrol", "about.erb", model)
 end
 

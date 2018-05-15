@@ -2,16 +2,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="<%= @model['site']['author'] %>">
-  <meta name="description" content="<%= @model['site']['description'] %>">
+<% if @model['description'] -%>
+  <meta name="description" content="<%= @model['description'] %>">
+<% end -%>
   <meta name="twitter:card" content="summary">
-  <meta property="og:title" content="<%= @model['site']['name'] %>">
-  <meta property="og:description" content="<%= @model['site']['description'] %>">
+  <meta property="og:title" content="<%= @model['site']['name'] %> - <%= @model['title'] %>">
+<% if @model['description'] -%>
+  <meta property="og:description" content="<%= @model['description'] %>">
+<% end -%>
   <meta property="og:type" content="website">
-  <meta property="og:url" content="<%= @model['site']['domain'] %><%= absolute_url %>">
-  <meta property="og:image" content="<%= @model['site']['domain'] %>/asset/img/icon/favicon.png">
+  <meta property="og:url" content="<%= absolute_url @model['site']['domain'] %>">
+<% if @model['image'] -%>
+  <meta property="og:image" content="<%= absolute_url @model['site']['domain'], @model['image'] %>">
+<% end -%>
   <meta property="og:site_name" content="<%= @model['site']['name'] %>">
   <meta property="og:locale" content="<%= @model['site']['locale'] %>">
-  <title><%= @model['site']['name'] %></title>
+  <title><%= @model['site']['name'] %> - <%= @model['title'] %></title>
   <link rel="stylesheet" href="<%= href 'asset/css/abrascet.css' %>">
   <link rel="shortcut icon" href="<%= href 'asset/img/icon/favicon.png' %>">
 </head>
