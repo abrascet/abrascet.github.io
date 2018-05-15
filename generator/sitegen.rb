@@ -47,8 +47,12 @@ class Page
     File.open(File.expand_path("../template/#{template_path}"), "r:UTF-8") do |file|
       template_content = file.read
     end
-    template = ERB.new(template_content)
+    template = ERB.new(template_content, nil, '-')
     template.result(binding)
+  end
+
+  def absolute_url
+    @link == "index.html" ? "/" : "/#{@link}"
   end
 
   def href(href)

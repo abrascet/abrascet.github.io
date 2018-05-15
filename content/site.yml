@@ -5,6 +5,7 @@ site:
   name: &siteName Ábrás Cet
   description: Ábrák, képek, rajzok
   author: Bata Gábor
+  domain: https://abrascet.github.io
 navigation:
   home: *siteName
   images: Képek
