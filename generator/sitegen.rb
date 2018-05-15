@@ -83,7 +83,7 @@ end
 
 def create_archive_page(image_pages)
   model = YAML.load_file("../content/archive.yml")
-  page = Page.new("archiv", "archive.erb", model)
+  page = Page.new("index", "archive.erb", model, "archiv")
 end
 
 def create_about_page()
