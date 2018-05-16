@@ -32,7 +32,7 @@ require "yaml"
 # Class representing a page
 class Page
 
-  attr_reader :id, :template, :model, :folder, :link
+  attr_reader :model, :link
 
   def initialize(id, template, model, folder = nil)
     @id = id
@@ -52,7 +52,7 @@ class Page
   end
 
   def absolute_url(domain, link = @link)
-    @link == link ? "#{domain}/" : "#{domain}/#{link}"
+    link == "index.html" ? "#{domain}/" : "#{domain}/#{link}"
   end
 
   def href(href)

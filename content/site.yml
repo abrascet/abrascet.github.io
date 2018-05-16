@@ -4,7 +4,7 @@ site:
   locale: hu_HU
   name: &siteName Ábrás Cet
   author: Bata Gábor
-  domain: https://abrascet.github.io
+  domain: http://www.abras-cet.hu
 navigation:
   home: *siteName
   images: Képek
