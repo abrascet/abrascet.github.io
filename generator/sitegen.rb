@@ -34,12 +34,13 @@ class Page
 
   attr_reader :model, :link
 
-  def initialize(id, template, model, folder = nil)
+  def initialize(id, template, model, folder = nil, extension = "html", layout = "layout.erb")
     @id = id
     @template = template
     @model = model
     @folder = folder
-    @link = @folder ? "#{@folder}/#{@id}.html" : "#{@id}.html"
+    @layout = layout
+    @link = @folder ? "#{@folder}/#{@id}.#{extension}" : "#{@id}.#{extension}"
   end
 
   def render(template_path = @template)
@@ -68,7 +69,7 @@ class Page
   def generate(site_model)
     puts "Generating: id:#{@id}, template:#{@template}, link:#{@link}"
     @model = site_model.merge(@model)
-    content = render("layout.erb")
+    content = render(@layout ? @layout : @template)
     Dir.mkdir("../#{@folder}") if @folder && !Dir.exist?("../#{@folder}")
     File.open(File.expand_path("../#{@link}"), "w:UTF-8") do |file|
       file.write(content)
@@ -106,6 +107,16 @@ def create_image_pages()
   return pages
 end
 
+def create_sitemap_xml(pages)
+  model = { "pages" => pages }
+  page = Page.new("sitemap", "sitemap_xml.erb", model, nil, "xml", nil)
+end
+
+def create_robots_xml(sitemap)
+  model = { "sitemap" => sitemap }
+  page = Page.new("robots", "robots_txt.erb", model, nil, "txt", nil)
+end
+
 # Create pages
 image_pages = create_image_pages()
 home_page = create_home_page()
@@ -122,6 +133,13 @@ site_model["pages"] = {
 }
 
 # Generate pages
-(image_pages + [home_page, archive_page, about_page]).each do |page|
+pages = image_pages + [home_page, archive_page, about_page]
+pages.each do |page|
   page.generate(site_model) if page
 end
+
+# Generate sitemap XML
+sitemap_xml = create_sitemap_xml(pages)
+sitemap_xml.generate(site_model)
+robots_txt = create_robots_xml(sitemap_xml)
+robots_txt.generate(site_model)

@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /
-Sitemap: <%= absolute_url @model['site']['domain'], 'sitemap.xml' %>
+Sitemap: <%= absolute_url @model['site']['domain'], @model['sitemap'].link %>
