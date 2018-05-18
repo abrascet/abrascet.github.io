@@ -3,8 +3,10 @@
   <p>Description</p>
   <p>
     <ul>
-      <li><a href="<%= href @model['prev'] ? @model['prev'].link : '' %>"><%= @model['prev'] ? @model['prev'].model['title'] : '' %></a></li>
-      <li><a href="<%= href @model['next'] ? @model['next'].link : '' %>"><%= @model['next'] ? @model['next'].model['title'] : '' %></a></li>
+      <li><a href="<%= href @model['first'] ? @model['first'].link : '' %>">first: <%= @model['first'] ? @model['first'].model['title'] : '' %></a></li>
+      <li><a href="<%= href @model['prev'] ? @model['prev'].link : '' %>">previous: <%= @model['prev'] ? @model['prev'].model['title'] : '' %></a></li>
+      <li><a href="<%= href @model['next'] ? @model['next'].link : '' %>">next: <%= @model['next'] ? @model['next'].model['title'] : '' %></a></li>
+      <li><a href="<%= href @model['last'] ? @model['last'].link : '' %>">last: <%= @model['last'] ? @model['last'].model['title'] : '' %></a></li>
     </ul>
   </p>
 </section>

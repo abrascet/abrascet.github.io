@@ -29,9 +29,7 @@
 require "erb"
 require "yaml"
 
-# Class representing a page
 class Page
-
   attr_reader :model, :link
 
   def initialize(id, template, model, folder = nil, extension = "html", layout = "layout.erb")
@@ -79,17 +77,17 @@ end
 
 def create_home_page()
   model = YAML.load_file("../content/home.yml")
-  page = Page.new("index", "home.erb", model)
+  Page.new("index", "home.erb", model)
 end
 
 def create_archive_page(image_pages)
   model = YAML.load_file("../content/archive.yml")
-  page = Page.new("index", "archive.erb", model, "archiv")
+  Page.new("archiv", "archive.erb", model)
 end
 
 def create_about_page()
   model = YAML.load_file("../content/about.yml")
-  page = Page.new("a-cetrol", "about.erb", model)
+  Page.new("a-cetrol", "about.erb", model)
 end
 
 def create_image_pages()
@@ -98,23 +96,29 @@ def create_image_pages()
   YAML.load_file("../content/images.yml").each do |key, model|
     current_page = Page.new(key, "image.erb", model, "abra")
     if previous_page
-      current_page.model["prev"] = previous_page
-      previous_page.model["next"] = current_page
+      current_page.model["next"] = previous_page
+      previous_page.model["prev"] = current_page
     end
     previous_page = current_page
     pages.push(current_page)
+  end
+  last_page = pages[0]
+  first_page = pages[pages.size - 1]
+  pages.each do |page|
+    page.model["first"] = first_page
+    page.model["last"] = last_page
   end
   return pages
 end
 
 def create_sitemap_xml(pages)
   model = { "pages" => pages }
-  page = Page.new("sitemap", "sitemap_xml.erb", model, nil, "xml", nil)
+  Page.new("sitemap", "sitemap_xml.erb", model, nil, "xml", nil)
 end
 
 def create_robots_xml(sitemap)
   model = { "sitemap" => sitemap }
-  page = Page.new("robots", "robots_txt.erb", model, nil, "txt", nil)
+  Page.new("robots", "robots_txt.erb", model, nil, "txt", nil)
 end
 
 # Create pages

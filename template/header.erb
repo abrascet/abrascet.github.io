@@ -17,6 +17,7 @@
 <% end -%>
   <meta property="og:site_name" content="<%= @model['site']['name'] %>">
   <meta property="og:locale" content="<%= @model['site']['locale'] %>">
+  <link rel="canonical" href="<%= absolute_url @model['site']['domain'] %>">
   <title><%= @model['site']['name'] %> - <%= @model['title'] %></title>
   <link rel="stylesheet" href="<%= href 'asset/css/abrascet.css' %>">
   <link rel="shortcut icon" href="<%= href 'asset/img/icon/favicon.png' %>">
