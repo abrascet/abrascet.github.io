@@ -75,6 +75,25 @@ class Page
   end
 end
 
+def create_image_pages()
+  pages = []
+  previous_page = nil
+  YAML.load_file("../content/images.yml").each do |key, model|
+    current_page = Page.new(key, "image.erb", model, "abra")
+    if previous_page
+      current_page.model["next"] = previous_page
+      previous_page.model["prev"] = current_page
+    end
+    previous_page = current_page
+    pages.push(current_page)
+  end
+  pages.each do |page|
+    page.model["first"] = pages[pages.size - 1]
+    page.model["last"] = pages[0]
+  end
+  return pages
+end
+
 def create_home_page()
   model = YAML.load_file("../content/home.yml")
   Page.new("index", "home.erb", model)
@@ -90,27 +109,6 @@ def create_about_page()
   Page.new("a-cetrol", "about.erb", model)
 end
 
-def create_image_pages()
-  pages = []
-  previous_page = nil
-  YAML.load_file("../content/images.yml").each do |key, model|
-    current_page = Page.new(key, "image.erb", model, "abra")
-    if previous_page
-      current_page.model["next"] = previous_page
-      previous_page.model["prev"] = current_page
-    end
-    previous_page = current_page
-    pages.push(current_page)
-  end
-  last_page = pages[0]
-  first_page = pages[pages.size - 1]
-  pages.each do |page|
-    page.model["first"] = first_page
-    page.model["last"] = last_page
-  end
-  return pages
-end
-
 def create_sitemap_xml(pages)
   model = { "pages" => pages }
   Page.new("sitemap", "sitemap_xml.erb", model, nil, "xml", nil)
@@ -121,7 +119,7 @@ def create_robots_xml(sitemap)
   Page.new("robots", "robots_txt.erb", model, nil, "txt", nil)
 end
 
-# Create pages
+# Create page objects
 image_pages = create_image_pages()
 home_page = create_home_page()
 archive_page = create_archive_page(image_pages)
@@ -139,10 +137,10 @@ site_model["pages"] = {
 # Generate pages
 pages = image_pages + [home_page, archive_page, about_page]
 pages.each do |page|
-  page.generate(site_model) if page
+  page.generate(site_model)
 end
 
-# Generate sitemap XML
+# Generate sitemap and robots.txt XML
 sitemap_xml = create_sitemap_xml(pages)
 sitemap_xml.generate(site_model)
 robots_txt = create_robots_xml(sitemap_xml)
