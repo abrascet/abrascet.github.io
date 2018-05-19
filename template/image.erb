@@ -1,12 +1,46 @@
 <section class="container">
   <h1><%= @model['title'] %></h1>
-  <p>Description</p>
-  <p>
-    <ul>
-      <li><a href="<%= href @model['first'] ? @model['first'].link : '' %>">first: <%= @model['first'] ? @model['first'].model['title'] : '' %></a></li>
-      <li><a href="<%= href @model['prev'] ? @model['prev'].link : '' %>">previous: <%= @model['prev'] ? @model['prev'].model['title'] : '' %></a></li>
-      <li><a href="<%= href @model['next'] ? @model['next'].link : '' %>">next: <%= @model['next'] ? @model['next'].model['title'] : '' %></a></li>
-      <li><a href="<%= href @model['last'] ? @model['last'].link : '' %>">last: <%= @model['last'] ? @model['last'].model['title'] : '' %></a></li>
-    </ul>
-  </p>
+  <p>Az oldal fejlesztés alatt...</p>
+  <div class="pagination">
+<%# Last -%>
+<% if @model['first'] -%>
+    <a class="button" href="<%= href @model['first'].link %>" title="<%= @model['first'].model['title'] %>">
+      &lt;&lt;
+    </a>
+<% else -%>
+    <span class="button button-outline">
+      &lt;&lt;
+    </span>
+<% end -%>
+<%# Next -%>
+<% if @model['prev'] -%>
+    <a class="button" href="<%= href @model['prev'].link %>" title="<%= @model['prev'].model['title'] %>">
+      &lt; Előző
+    </a>
+<% else -%>
+    <span class="button button-outline">
+      &lt; Előző
+    </span>
+<% end -%>
+<%# Previous -%>
+<% if @model['next'] -%>
+    <a class="button" href="<%= href @model['next'].link %>" title="<%= @model['next'].model['title'] %>">
+      Következő &gt;
+    </a>
+<% else -%>
+    <span class="button button-outline">
+      Következő &gt;
+    </span>
+<% end -%>
+<%# First -%>
+<% if @model['last'] -%>
+    <a class="button" href="<%= href @model['last'].link %>" title="<%= @model['last'].model['title'] %>">
+      &gt;&gt;
+    </a>
+<% else -%>
+    <span class="button button-outline">
+      &gt;&gt;
+    </span>
+<% end -%>
+  </div>
 </section>

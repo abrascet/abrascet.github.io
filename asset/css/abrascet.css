@@ -239,15 +239,15 @@ input[type='submit'] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 300;
   height: 3.8rem;
   letter-spacing: .1rem;
   line-height: 3.8rem;
   padding: 0 3.0rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  /* abr: text-transform: uppercase;*/
   white-space: nowrap;
 }
 
@@ -883,4 +883,8 @@ img {
 
 .navigation .navigation-link.active {
   color: #606c76;
+}
+
+.pagination {
+  text-align: center;
 }

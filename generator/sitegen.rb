@@ -88,15 +88,16 @@ def create_image_pages()
     pages.push(current_page)
   end
   pages.each do |page|
-    page.model["first"] = pages[pages.size - 1]
-    page.model["last"] = pages[0]
+    page.model["first"] = pages.last if page.link != pages.last.link
+    page.model["last"] = pages.first if page.link != pages.first.link
   end
   return pages
 end
 
-def create_home_page()
+def create_home_page(image_pages)
   model = YAML.load_file("../content/home.yml")
-  Page.new("index", "home.erb", model)
+  model = image_pages.first.model.merge(model)
+  Page.new("index", "image.erb", model)
 end
 
 def create_archive_page(image_pages)
@@ -121,7 +122,7 @@ end
 
 # Create page objects
 image_pages = create_image_pages()
-home_page = create_home_page()
+home_page = create_home_page(image_pages)
 archive_page = create_archive_page(image_pages)
 about_page = create_about_page()
 
