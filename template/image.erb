@@ -1,45 +1,48 @@
 <section class="container">
   <h1><%= @model['title'] %></h1>
   <p>Az oldal fejlesztés alatt...</p>
+  <div class="image-container">
+    <img class="image" src="<%= @model['image'] %>" alt="<%= @model['title'] %>">
+  </div>
   <div class="pagination">
 <%# Last -%>
 <% if @model['first'] -%>
     <a class="button" href="<%= href @model['first'].link %>" title="<%= @model['first'].model['title'] %>">
-      &lt;&lt;
+      &lt;&lt; <span class="pagination-caption">Első</span>
     </a>
 <% else -%>
     <span class="button button-outline">
-      &lt;&lt;
+      &lt;&lt; <span class="pagination-caption">Első</span>
     </span>
 <% end -%>
 <%# Next -%>
 <% if @model['prev'] -%>
     <a class="button" href="<%= href @model['prev'].link %>" title="<%= @model['prev'].model['title'] %>">
-      &lt; <span class"pagination-caption">Előző</span>
+      &lt; <span class="pagination-caption">Előző</span>
     </a>
 <% else -%>
     <span class="button button-outline">
-      &lt; <span class"pagination-caption">Előző</span>
+      &lt; <span class="pagination-caption">Előző</span>
     </span>
 <% end -%>
 <%# Previous -%>
 <% if @model['next'] -%>
     <a class="button" href="<%= href @model['next'].link %>" title="<%= @model['next'].model['title'] %>">
-      <span class"pagination-caption">Következő</span> &gt;
+      <span class="pagination-caption">Következő</span> &gt;
     </a>
 <% else -%>
     <span class="button button-outline">
-      <span class"pagination-caption">Következő</span> &gt;
+      <span class="pagination-caption">Következő</span> &gt;
     </span>
 <% end -%>
 <%# First -%>
 <% if @model['last'] -%>
     <a class="button" href="<%= href @model['last'].link %>" title="<%= @model['last'].model['title'] %>">
-      &gt;&gt;
+      <span class="pagination-caption">Legújabb</span> &gt;&gt;
     </a>
 <% else -%>
     <span class="button button-outline">
-      &gt;&gt;
+      <span class="pagination-caption">Legújabb</span> &gt;&gt;
     </span>
 <% end -%>
   </div>

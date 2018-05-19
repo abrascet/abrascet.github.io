@@ -2,25 +2,25 @@
 ---
 test1:
   title: test1
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image1
 test2:
   title: test2
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image2
 test3:
   title: test3
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image3
 test4:
   title: test4
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image4
 test5:
   title: test5
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image5
 test6:
   title: test6
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image6
 test7:
   title: test7
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image7
 test8:
   title: test8
-  image: asset/img/icon/favicon.png
+  image: http://via.placeholder.com/700x800&text=image8

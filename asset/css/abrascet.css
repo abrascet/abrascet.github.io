@@ -244,7 +244,7 @@ input[type='submit'] {
   height: 3.8rem;
   letter-spacing: .1rem;
   line-height: 3.8rem;
-  padding: 0 3.0rem;
+  padding: 0 2.0rem;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -782,14 +782,12 @@ img {
 
 /*! Abras Cet, Copyright 2018 Gabor Bata */
 .wrapper {
-  display: block;
   overflow: hidden;
-  position: relative;
   width: 100%;
 }
 
 .wrapper .container {
-  max-width: 90rem;
+  max-width: 74rem;
 }
 
 .wrapper > .container {
@@ -800,7 +798,6 @@ img {
 .navigation {
   background: #f4f5f6;
   border-bottom: .1rem solid #d1d1d1;
-  display: block;
   height: 5.2rem;
   max-width: 100%;
   width: 100%;
@@ -837,7 +834,6 @@ img {
 .navigation .navigation-title, .navigation .title {
   color: #606c76;
   font-family: 'Pangolin', 'Helvetica', 'Arial', sans-serif;
-  position: relative;
 }
 
 .navigation .navigation-link, .navigation .navigation-title, .navigation .title {
@@ -862,11 +858,16 @@ img {
   padding: 0 1rem;
 }
 
-.pagination {
+.pagination, .image-container {
+  padding: 0.4rem 0;
   text-align: center;
 }
 
-@media (min-width:40rem) {
+.pagination .pagination-caption {
+  display: none;
+}
+
+@media (min-width: 40rem) {
   .navigation .navigation-list {
     background-color: transparent;
     border: none;
@@ -878,7 +879,6 @@ img {
   .navigation .navigation-item {
     float: left;
     margin-left: 1.6rem;
-    /*position: relative;*/
   }
 
   .navigation .navigation-link {
@@ -887,5 +887,9 @@ img {
 
   .navigation .navigation-toggle {
     display: none;
+  }
+
+  .pagination .pagination-caption {
+    display: initial;
   }
 }

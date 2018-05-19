@@ -88,6 +88,7 @@ def create_image_pages()
     pages.push(current_page)
   end
   pages.each do |page|
+    page.model["this"] = page
     page.model["first"] = pages.last if page.link != pages.last.link
     page.model["last"] = pages.first if page.link != pages.first.link
   end
