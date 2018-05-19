@@ -247,7 +247,6 @@ input[type='submit'] {
   padding: 0 3.0rem;
   text-align: center;
   text-decoration: none;
-  /* abr: text-transform: uppercase;*/
   white-space: nowrap;
 }
 
@@ -794,8 +793,8 @@ img {
 }
 
 .wrapper > .container {
-  padding-bottom: 7.5rem;
-  padding-top: 7.5rem;
+  padding-bottom: 1.8rem;
+  padding-top: 1.8rem;
 }
 
 .navigation {
@@ -803,24 +802,13 @@ img {
   border-bottom: .1rem solid #d1d1d1;
   display: block;
   height: 5.2rem;
-  left: 0;
   max-width: 100%;
-  position: fixed;
-  right: 0;
-  top: 0;
   width: 100%;
-  z-index: 1;
 }
 
 .navigation .container {
   padding-bottom: 0;
   padding-top: 0;
-}
-
-.navigation .navigation-toggle {
-  font-family: sans-serif;
-  font-size: 2.4rem;
-  line-height: 5.2rem;
 }
 
 .navigation .navigation-list {
@@ -830,35 +818,14 @@ img {
   list-style: none;
   margin-bottom: 0;
   margin-right: 0;
-  padding: 0 5.2rem;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 5.1rem;
+  z-index: 1;
 }
 
 .navigation .navigation-item {
   margin-bottom: 0;
-}
-
-@media (min-width:40rem) {
-  .navigation .navigation-toggle {
-    display: none;
-  }
-
-  .navigation .navigation-list {
-    background-color: transparent;
-    border: none;
-    display: block;
-    padding: 0;
-    position: relative;
-    top: 0;
-  }
-
-  .navigation .navigation-item {
-    float: left;
-    margin-left: 1.6rem;
-    position: relative;
-  }
 }
 
 .navigation .img {
@@ -877,14 +844,48 @@ img {
   display: inline;
   font-size: 1.6rem;
   line-height: 5.2rem;
-  padding: 0;
   text-decoration: none;
+}
+
+.navigation .navigation-link {
+  padding: 1rem 5.2rem;
 }
 
 .navigation .navigation-link.active {
   color: #606c76;
 }
 
+.navigation .navigation-toggle {
+  font-family: sans-serif;
+  font-size: 3rem;
+  line-height: 5.2rem;
+  padding: 0 1rem;
+}
+
 .pagination {
   text-align: center;
+}
+
+@media (min-width:40rem) {
+  .navigation .navigation-list {
+    background-color: transparent;
+    border: none;
+    display: block;
+    position: relative;
+    top: 0;
+  }
+
+  .navigation .navigation-item {
+    float: left;
+    margin-left: 1.6rem;
+    /*position: relative;*/
+  }
+
+  .navigation .navigation-link {
+    padding: 0;
+  }
+
+  .navigation .navigation-toggle {
+    display: none;
+  }
 }

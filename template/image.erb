@@ -15,21 +15,21 @@
 <%# Next -%>
 <% if @model['prev'] -%>
     <a class="button" href="<%= href @model['prev'].link %>" title="<%= @model['prev'].model['title'] %>">
-      &lt; Előző
+      &lt; <span class"pagination-caption">Előző</span>
     </a>
 <% else -%>
     <span class="button button-outline">
-      &lt; Előző
+      &lt; <span class"pagination-caption">Előző</span>
     </span>
 <% end -%>
 <%# Previous -%>
 <% if @model['next'] -%>
     <a class="button" href="<%= href @model['next'].link %>" title="<%= @model['next'].model['title'] %>">
-      Következő &gt;
+      <span class"pagination-caption">Következő</span> &gt;
     </a>
 <% else -%>
     <span class="button button-outline">
-      Következő &gt;
+      <span class"pagination-caption">Következő</span> &gt;
     </span>
 <% end -%>
 <%# First -%>
