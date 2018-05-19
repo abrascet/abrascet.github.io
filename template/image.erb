@@ -1,8 +1,11 @@
 <section class="container">
   <h1><%= @model['title'] %></h1>
   <p>Az oldal fejlesztés alatt...</p>
+<% if @model['description'] -%>
+  <p><%= @model['description'] %></p>
+<% end -%>
   <div class="image-container">
-    <img class="image" src="<%= @model['image'] %>" alt="<%= @model['title'] %>">
+    <img class="image" src="<%= href @model['image'] %>" alt="<%= @model['title'] %>">
   </div>
   <div class="pagination">
 <%# Last -%>

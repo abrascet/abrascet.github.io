@@ -1,3 +1,6 @@
 ---
-title_home: Ábrák, képek, rajzok
-og_type: website
+og:
+  title: Ábrás Cet
+  description: Ábrák, képek, rajzok
+  type: website
+  image: "#todo"

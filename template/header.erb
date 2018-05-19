@@ -2,23 +2,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="<%= @model['site']['author'] %>">
-<% if @model['description'] -%>
+<% if @model['og'] && @model['og']['description'] -%>
+  <meta name="description" content="<%= @model['og']['description'] %>">
+<% elsif @model['description'] -%>
   <meta name="description" content="<%= @model['description'] %>">
 <% end -%>
   <meta name="twitter:card" content="summary">
+<% if @model['og'] && @model['og']['title'] -%>
+  <meta property="og:title" content="<%= @model['og']['title'] %>">
+<% else -%>
   <meta property="og:title" content="<%= @model['site']['name'] %> - <%= @model['title'] %>">
-<% if @model['description'] -%>
+<% end -%>
+<% if @model['og'] && @model['og']['description'] -%>
+  <meta property="og:description" content="<%= @model['og']['description'] %>">
+<% elsif @model['description'] -%>
   <meta property="og:description" content="<%= @model['description'] %>">
 <% end -%>
-  <meta property="og:type" content="website">
+<% if @model['og'] && @model['og']['type'] -%>
+  <meta property="og:type" content="<%= @model['og']['type'] %>">
+<% else -%>
+  <meta property="og:type" content="article">
+<% end -%>
   <meta property="og:url" content="<%= absolute_url @model['site']['domain'] %>">
-<% if @model['image'] -%>
+<% if @model['og'] && @model['og']['image'] -%>
+  <meta property="og:image" content="<%= absolute_url @model['site']['domain'], @model['og']['image'] %>">
+<% elsif @model['image'] -%>
   <meta property="og:image" content="<%= absolute_url @model['site']['domain'], @model['image'] %>">
 <% end -%>
   <meta property="og:site_name" content="<%= @model['site']['name'] %>">
   <meta property="og:locale" content="<%= @model['site']['locale'] %>">
   <link rel="canonical" href="<%= absolute_url @model['site']['domain'] %>">
+<% if @model['og'] && @model['og']['title'] -%>
+  <title><%= @model['og']['title'] %></title>
+<% else -%>
   <title><%= @model['site']['name'] %> - <%= @model['title'] %></title>
+<% end -%>
   <link rel="stylesheet" href="<%= href 'asset/css/abrascet.css' %>">
   <link rel="shortcut icon" href="<%= href 'asset/img/icon/favicon.png' %>">
 </head>

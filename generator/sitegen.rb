@@ -88,7 +88,6 @@ def create_image_pages()
     pages.push(current_page)
   end
   pages.each do |page|
-    page.model["this"] = page
     page.model["first"] = pages.last if page.link != pages.last.link
     page.model["last"] = pages.first if page.link != pages.first.link
   end
@@ -103,6 +102,7 @@ end
 
 def create_archive_page(image_pages)
   model = YAML.load_file("../content/archive.yml")
+  model['image_pages'] = image_pages
   Page.new("archiv", "archive.erb", model)
 end
 
