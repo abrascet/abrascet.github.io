@@ -81,15 +81,15 @@ def create_image_pages()
   YAML.load_file("../content/images.yml").each do |key, model|
     current_page = Page.new(key, "image.erb", model, "abra")
     if previous_page
-      current_page.model["next"] = previous_page
-      previous_page.model["prev"] = current_page
+      current_page.model["next"] = previous_page.link
+      previous_page.model["prev"] = current_page.link
     end
     previous_page = current_page
     pages.push(current_page)
   end
   pages.each do |page|
-    page.model["first"] = pages.last if page.link != pages.last.link
-    page.model["last"] = pages.first if page.link != pages.first.link
+    page.model["first"] = pages.last.link if page.link != pages.last.link
+    page.model["last"] = pages.first.link if page.link != pages.first.link
   end
   return pages
 end

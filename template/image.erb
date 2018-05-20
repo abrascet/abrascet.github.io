@@ -8,9 +8,9 @@
     <img class="image" src="<%= href @model['image'] %>" alt="<%= @model['title'] %>">
   </div>
   <div class="pagination">
-<%# Last -%>
+<%# first -%>
 <% if @model['first'] -%>
-    <a class="button" href="<%= href @model['first'].link %>" title="<%= @model['first'].model['title'] %>">
+    <a class="button" href="<%= href @model['first'] %>">
       &lt;&lt; <span class="pagination-caption">Első</span>
     </a>
 <% else -%>
@@ -18,9 +18,9 @@
       &lt;&lt; <span class="pagination-caption">Első</span>
     </span>
 <% end -%>
-<%# Next -%>
+<%# prev -%>
 <% if @model['prev'] -%>
-    <a class="button" href="<%= href @model['prev'].link %>" title="<%= @model['prev'].model['title'] %>">
+    <a class="button" href="<%= href @model['prev'] %>">
       &lt; <span class="pagination-caption">Előző</span>
     </a>
 <% else -%>
@@ -28,9 +28,9 @@
       &lt; <span class="pagination-caption">Előző</span>
     </span>
 <% end -%>
-<%# Previous -%>
+<%# next -%>
 <% if @model['next'] -%>
-    <a class="button" href="<%= href @model['next'].link %>" title="<%= @model['next'].model['title'] %>">
+    <a class="button" href="<%= href @model['next'] %>">
       <span class="pagination-caption">Következő</span> &gt;
     </a>
 <% else -%>
@@ -38,9 +38,9 @@
       <span class="pagination-caption">Következő</span> &gt;
     </span>
 <% end -%>
-<%# First -%>
+<%# last -%>
 <% if @model['last'] -%>
-    <a class="button" href="<%= href @model['last'].link %>" title="<%= @model['last'].model['title'] %>">
+    <a class="button" href="<%= href @model['last'] %>">
       <span class="pagination-caption">Legújabb</span> &gt;&gt;
     </a>
 <% else -%>
