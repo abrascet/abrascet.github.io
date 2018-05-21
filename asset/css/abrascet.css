@@ -864,6 +864,10 @@ img {
   text-align: center;
 }
 
+.image-container h1 {
+  margin-bottom: 0;
+}
+
 .pagination .pagination-caption {
   display: none;
 }
