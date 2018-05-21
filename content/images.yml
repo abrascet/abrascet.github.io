@@ -1,26 +1,6 @@
 # Images: new entries come first
 ---
-test1:
-  title: test1
-  image: asset/img/icon/favicon.png
-test2:
-  title: test2
-  image: asset/img/icon/favicon.png
-test3:
-  title: test3
-  image: asset/img/icon/favicon.png
-test4:
-  title: test4
-  image: asset/img/icon/favicon.png
-test5:
-  title: test5
-  image: asset/img/icon/favicon.png
-test6:
-  title: test6
-  image: asset/img/icon/favicon.png
-test7:
-  title: test7
-  image: asset/img/icon/favicon.png
-test8:
-  title: test8
-  image: asset/img/icon/favicon.png
+abras-cet:
+  title: Ábrás Cet
+  image: asset/img/abra/abras-cet.jpg
+  date: 2018-05-21
