@@ -1,5 +1,10 @@
 # Images: new entries come first
 ---
+alma:
+  title: Alma
+  description: Minden nap egy alma, és a doktor al ma
+  image: asset/img/abra/alma.png
+  date: 2018-05-21
 abras-cet:
   title: Ábrás Cet
   description: Hogy hívják a tetovált bálnát?
