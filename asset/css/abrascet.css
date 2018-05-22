@@ -797,7 +797,7 @@ img {
 
 .navigation {
   background: #f4f5f6;
-  border-bottom: .1rem solid #d1d1d1;
+  border-bottom: .2rem solid #d1d1d1;
   height: 5.2rem;
   max-width: 100%;
   width: 100%;
@@ -810,14 +810,14 @@ img {
 
 .navigation .navigation-list {
   background-color: #f4f5f6;
-  border: .1rem solid #d1d1d1;
+  border: .2rem solid #d1d1d1;
   display: none;
   list-style: none;
   margin-bottom: 0;
   margin-right: 0;
   position: absolute;
   right: 0;
-  top: 5.1rem;
+  top: 5rem;
   z-index: 1;
 }
 
