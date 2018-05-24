@@ -876,6 +876,10 @@ img {
   margin-left: 0.6rem;
 }
 
+.social-share span {
+  display: block;
+}
+
 .footer {
   text-align: center;
 }
@@ -915,6 +919,10 @@ img {
   }
 
   .pagination .pagination-caption {
+    display: initial;
+  }
+
+  .social-share span {
     display: initial;
   }
 }
