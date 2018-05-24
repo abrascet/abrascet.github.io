@@ -11,7 +11,7 @@
 <% if @model['og'] && @model['og']['title'] -%>
   <meta property="og:title" content="<%= @model['og']['title'] %>">
 <% else -%>
-  <meta property="og:title" content="<%= @model['site']['name'] %> - <%= @model['title'] %>">
+  <meta property="og:title" content="<%= @model['site']['name'] %> &ndash; <%= @model['title'] %>">
 <% end -%>
 <% if @model['og'] && @model['og']['description'] -%>
   <meta property="og:description" content="<%= @model['og']['description'] %>">
@@ -35,7 +35,7 @@
 <% if @model['og'] && @model['og']['title'] -%>
   <title><%= @model['og']['title'] %></title>
 <% else -%>
-  <title><%= @model['site']['name'] %> - <%= @model['title'] %></title>
+  <title><%= @model['site']['name'] %> &ndash; <%= @model['title'] %></title>
 <% end -%>
   <link rel="stylesheet" href="<%= href 'asset/css/abrascet.css' %>">
   <link rel="stylesheet" href="<%= href 'asset/css/cookieconsent.min.css' %>">
