@@ -859,7 +859,7 @@ img {
   padding: 0 1rem;
 }
 
-.pagination, .image-container {
+.pagination, .image-container, .social-share {
   padding: 0.4rem 0;
   text-align: center;
 }
@@ -870,6 +870,10 @@ img {
 
 .pagination .pagination-caption {
   display: none;
+}
+
+.social-share a {
+  margin-left: 0.6rem;
 }
 
 @media (min-width: 40rem) {
