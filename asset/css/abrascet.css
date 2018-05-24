@@ -876,6 +876,10 @@ img {
   margin-left: 0.6rem;
 }
 
+.footer {
+  text-align: center;
+}
+
 @media (min-width: 40rem) {
   .navigation {
     height: 7rem;
