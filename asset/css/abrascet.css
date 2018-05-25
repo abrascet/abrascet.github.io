@@ -864,7 +864,7 @@ img {
   text-align: center;
 }
 
-.image-container h1 {
+.image-container .image-title {
   margin-bottom: 0;
 }
 
@@ -872,11 +872,11 @@ img {
   display: none;
 }
 
-.social-share a {
+.social-share .social-share-link {
   margin-left: 0.6rem;
 }
 
-.social-share span {
+.social-share .social-share-caption {
   display: block;
 }
 
@@ -918,11 +918,7 @@ img {
     display: none;
   }
 
-  .pagination .pagination-caption {
-    display: initial;
-  }
-
-  .social-share span {
-    display: initial;
+  .pagination .pagination-caption, .social-share .social-share-caption {
+    display: inline;
   }
 }

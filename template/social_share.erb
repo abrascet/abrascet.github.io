@@ -2,9 +2,9 @@
 <% encoded_url = ERB::Util.url_encode absolute_url(@model['site']['domain'], @model['link']) -%>
 <% encoded_image = ERB::Util.url_encode absolute_url(@model['site']['domain'], @model['image']) -%>
   <!--googleoff: all--><div class="social-share">
-    <span>Megosztás:</span>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=<%= encoded_url %>" target="_blank">Facebook</a>
-    <a href="https://twitter.com/intent/tweet?url=<%= encoded_url %>&amp;text=<%= encoded_title %>" target="_blank">Twitter</a>
-    <a href="https://pinterest.com/pin/create/button/?url=<%= encoded_url %>&amp;description=<%= encoded_title %>&amp;media=<%= encoded_image %>" target="_blank">Pinterest</a>
-    <a href="https://plus.google.com/share?url=<%= encoded_url %>&amp;hl=<%= @model['site']['lang'] %>" target="_blank">Google+</a>
+    <span class="social-share-caption">Megosztás:</span>
+    <a class="social-share-link" href="https://www.facebook.com/sharer/sharer.php?u=<%= encoded_url %>" target="_blank">Facebook</a>
+    <a class="social-share-link" href="https://twitter.com/intent/tweet?url=<%= encoded_url %>&amp;text=<%= encoded_title %>" target="_blank">Twitter</a>
+    <a class="social-share-link" href="https://pinterest.com/pin/create/button/?url=<%= encoded_url %>&amp;description=<%= encoded_title %>&amp;media=<%= encoded_image %>" target="_blank">Pinterest</a>
+    <a class="social-share-link" href="https://plus.google.com/share?url=<%= encoded_url %>&amp;hl=<%= @model['site']['lang'] %>" target="_blank">Google+</a>
   </div><!--googleon: all-->
