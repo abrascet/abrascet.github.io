@@ -868,6 +868,10 @@ img {
   margin-bottom: 0;
 }
 
+.image-container .image-description {
+  margin-bottom: 1rem;
+}
+
 .pagination .pagination-caption {
   display: none;
 }

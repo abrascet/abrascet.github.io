@@ -3,7 +3,7 @@
     <h1 class="image-title"><%= @model['title'] %></h1>
     <img src="<%= href @model['image'] %>" alt="<%= @model['title'] %>">
 <% if @model['description'] -%>
-    <p><%= @model['description'] %></p>
+    <p class="image-description"><%= @model['description'] %></p>
 <% end -%>
   </div>
   <div class="pagination">
