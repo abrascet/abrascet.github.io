@@ -1,5 +1,19 @@
 # Images: new entries come first
+# sia
+# juhasz
+# ludas matyi
+# szabadsag szobor
+# beka
+# banya
+# sun
+# osember
+# homokvar
 ---
+narcisz:
+  title: Nárcisz
+  description: Nárcisz orrtörlő
+  image: asset/img/abra/narcisz.jpg
+  date: 2018-05-26
 alma:
   title: Alma
   description: Minden nap egy alma, és a doktor al ma
