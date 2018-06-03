@@ -1,6 +1,5 @@
 # Images: new entries come first
 # sia
-# juhasz
 # ludas matyi
 # szabadsag szobor
 # beka
@@ -9,6 +8,11 @@
 # osember
 # homokvar
 ---
+csillagszemu-juhasz:
+  title: Csillagszemű juhász
+  description: A csillagszemű juhász és az antracit színű puli
+  image: asset/img/abra/csillagszemu-juhasz.png
+  date: 2018-06-03
 narcisz:
   title: Nárcisz
   description: Nárcisz orrtörlő
