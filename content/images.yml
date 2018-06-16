@@ -1,5 +1,4 @@
 # Images: new entries come first
-# sia
 # ludas matyi
 # szabadsag szobor
 # beka
@@ -8,6 +7,11 @@
 # osember
 # homokvar
 ---
+sia-a-szobakutya:
+  title: Sia
+  description: Sia, a szobakutya
+  image: asset/img/abra/sia.png
+  date: 2018-06-16
 csillagszemu-juhasz:
   title: Csillagszemű juhász
   description: A csillagszemű juhász és az antracit színű puli

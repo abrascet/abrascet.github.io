@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>http://www.abras-cet.hu/abra/sia-a-szobakutya.html</loc>
+    <image:image>
+      <image:loc>http://www.abras-cet.hu/asset/img/abra/sia.png</image:loc>
+      <image:title>Sia</image:title>
+      <image:caption>Sia, a szobakutya</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>http://www.abras-cet.hu/abra/csillagszemu-juhasz.html</loc>
     <image:image>
       <image:loc>http://www.abras-cet.hu/asset/img/abra/csillagszemu-juhasz.png</image:loc>
