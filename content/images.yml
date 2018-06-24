@@ -1,12 +1,21 @@
 # Images: new entries come first
 # ludas matyi
-# szabadsag szobor
 # beka
 # banya
 # sun
 # osember
 # homokvar
 ---
+# ludas-matyi:
+#   title: Lúdas Matyi
+#   description: Lúdas Matyi és Márton a lúd
+#   image: asset/img/abra/ludas-matyi.png
+#   date: ???
+szabadsag-szobor-new-york:
+  title: Szabadság-szobor
+  description: Szabadság-szobor (New York)
+  image: asset/img/abra/szabadsag-szobor-new-york.png
+  date: 2018-06-24
 sia-a-szobakutya:
   title: Sia
   description: Sia, a szobakutya
