@@ -9,9 +9,9 @@
   <div class="pagination">
 <%# first -%>
 <% if @model['first'] -%>
-    <a class="button" href="<%= href @model['first'] %>">
+    <!--googleoff: anchor--><a class="button" href="<%= href @model['first'] %>">
       &lt;&lt; <span class="pagination-caption">Első</span>
-    </a>
+    </a><!--googleon: anchor-->
 <% else -%>
     <span class="button button-outline">
       &lt;&lt; <span class="pagination-caption">Első</span>
@@ -19,9 +19,9 @@
 <% end -%>
 <%# prev -%>
 <% if @model['prev'] -%>
-    <a class="button" href="<%= href @model['prev'] %>">
+    <!--googleoff: anchor--><a class="button" href="<%= href @model['prev'] %>">
       &lt; <span class="pagination-caption">Előző</span>
-    </a>
+    </a><!--googleon: anchor-->
 <% else -%>
     <span class="button button-outline">
       &lt; <span class="pagination-caption">Előző</span>
@@ -29,9 +29,9 @@
 <% end -%>
 <%# next -%>
 <% if @model['next'] -%>
-    <a class="button" href="<%= href @model['next'] %>">
+    <!--googleoff: anchor--><a class="button" href="<%= href @model['next'] %>">
       <span class="pagination-caption">Következő</span> &gt;
-    </a>
+    </a><!--googleon: anchor-->
 <% else -%>
     <span class="button button-outline">
       <span class="pagination-caption">Következő</span> &gt;
@@ -39,9 +39,9 @@
 <% end -%>
 <%# last -%>
 <% if @model['last'] -%>
-    <a class="button" href="<%= href @model['last'] %>">
+    <!--googleoff: anchor--><a class="button" href="<%= href @model['last'] %>">
       <span class="pagination-caption">Legújabb</span> &gt;&gt;
-    </a>
+    </a><!--googleon: anchor-->
 <% else -%>
     <span class="button button-outline">
       <span class="pagination-caption">Legújabb</span> &gt;&gt;
