@@ -6,11 +6,11 @@
 # osember
 # homokvar
 ---
-# ludas-matyi:
-#   title: Lúdas Matyi
-#   description: Lúdas Matyi és Márton a lúd
-#   image: asset/img/abra/ludas-matyi.png
-#   date: ???
+ludas-matyi:
+  title: Lúdas Matyi
+  description: Lúdas Matyi és Márton
+  image: asset/img/abra/ludas-matyi.png
+  date: 2018-06-30
 szabadsag-szobor-new-york:
   title: Szabadság-szobor
   description: Szabadság-szobor (New York)
