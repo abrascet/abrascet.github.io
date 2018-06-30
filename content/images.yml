@@ -1,11 +1,14 @@
 # Images: new entries come first
-# ludas matyi
 # beka
 # banya
-# sun
 # osember
 # homokvar
 ---
+#sun:
+#  title: Sün
+#  description: Sün (Erinaceus roumanicus), avagy kaktuszmalac
+#  image: asset/img/abra/sun.png
+#  date: 2018-??-??
 ludas-matyi:
   title: Lúdas Matyi
   description: Lúdas Matyi és Márton
