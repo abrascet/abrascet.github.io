@@ -8,24 +8,32 @@
 # lada
 # motor
 # narancsle2
-# porcelan_figura
 # sajt
 # stefan
 # szalami
-# tej
 # turista
 # ur
 # urhajo
 # piramis
 ---
+#porcelan-figura
+#  title: Porcelán figura
+#  description: Porcelán figura (Herend)
+#  image: asset/img/abra/porcelan-figura.png
+#  date: 2018-??-??
+#tej
+#  title: Tej
+#  description: Tej
+#  image: asset/img/abra/tej.png
+#  date: 2018-??-??
 #teknos:
 #  title: Teknős
-#  description: Teknős
+#  description: Szárazföldi teknős
 #  image: asset/img/abra/teknos.jpg
 #  date: 2018-??-??
 #rak:
 #  title: Rák
-#  description: Rák
+#  description: Vörös rák (Gecarcoidea natalis)
 #  image: asset/img/abra/rak.jpg
 #  date: 2018-??-??
 #sun:
