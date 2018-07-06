@@ -36,11 +36,11 @@
 #  description: Vörös rák (Gecarcoidea natalis)
 #  image: asset/img/abra/rak.jpg
 #  date: 2018-??-??
-#sun:
-#  title: Sün
-#  description: Sün (Erinaceus roumanicus), avagy kaktuszmalac
-#  image: asset/img/abra/sun.png
-#  date: 2018-??-??
+sun:
+  title: Sün
+  description: Sün (Erinaceus roumanicus), avagy kaktuszmalac
+  image: asset/img/abra/sun.png
+  date: 2018-07-06
 ludas-matyi:
   title: Lúdas Matyi
   description: Lúdas Matyi és Márton
