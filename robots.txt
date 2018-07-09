@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.abras-cet.hu/sitemap.xml
+Sitemap: https://www.abras-cet.hu/sitemap.xml
