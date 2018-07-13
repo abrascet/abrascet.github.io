@@ -21,11 +21,6 @@
 #  description: Porcelán figura (Herend)
 #  image: asset/img/abra/porcelan-figura.png
 #  date: 2018-??-??
-#tej
-#  title: Tej
-#  description: Tej
-#  image: asset/img/abra/tej.png
-#  date: 2018-??-??
 #teknos:
 #  title: Teknős
 #  description: Szárazföldi teknős
@@ -36,6 +31,11 @@
 #  description: Vörös rák (Gecarcoidea natalis)
 #  image: asset/img/abra/rak.jpg
 #  date: 2018-??-??
+tej:
+  title: Tej
+  description: Mert a tej is megérdemel egy rajzot
+  image: asset/img/abra/tej.png
+  date: 2018-07-13
 sun:
   title: Sün
   description: Sün (Erinaceus roumanicus), avagy kaktuszmalac
