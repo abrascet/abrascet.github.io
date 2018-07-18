@@ -31,7 +31,11 @@
 <% end -%>
   <meta property="og:site_name" content="<%= @model['site']['name'] %>">
   <meta property="og:locale" content="<%= @model['site']['locale'] %>">
+<% if @model['meta'] && @model['meta']['canonical'] -%>
+  <link rel="canonical" href="<%= absolute_url @model['site']['domain'], @model['meta']['canonical'] %>">
+<% else -%>
   <link rel="canonical" href="<%= absolute_url @model['site']['domain'] %>">
+<% end -%>
 <% if @model['meta'] && @model['meta']['title'] -%>
   <title><%= @model['meta']['title'] %></title>
 <% else -%>
