@@ -26,11 +26,11 @@
 #  description: Szárazföldi teknős
 #  image: asset/img/abra/teknos.jpg
 #  date: 2018-??-??
-#rak:
-#  title: Rák
-#  description: Vörös rák (Gecarcoidea natalis)
-#  image: asset/img/abra/rak.jpg
-#  date: 2018-??-??
+rak:
+  title: Rák
+  description: Vörös rák (Gecarcoidea natalis)
+  image: asset/img/abra/rak.jpg
+  date: 2018-07-19
 tej:
   title: Tej
   description: Mert a tej is megérdemel egy rajzot

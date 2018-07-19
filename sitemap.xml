@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/rak.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/rak.jpg</image:loc>
+      <image:title>Rák</image:title>
+      <image:caption>Vörös rák (Gecarcoidea natalis)</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/tej.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/tej.png</image:loc>
