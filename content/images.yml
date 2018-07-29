@@ -26,6 +26,11 @@
 #  description: Szárazföldi teknős
 #  image: asset/img/abra/teknos.jpg
 #  date: 2018-??-??
+gatyas-beka:
+  title: Gatyás béka
+  description: Csak egy béka gyatyában
+  image: asset/img/abra/gatyas-beka.png
+  date: 2018-07-29
 rak:
   title: Rák
   description: Vörös rák (Gecarcoidea natalis)
