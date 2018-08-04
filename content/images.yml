@@ -1,5 +1,4 @@
 # Images: new entries come first
-# beka
 # banya
 # osember
 # homokvar
@@ -16,16 +15,16 @@
 # urhajo
 # piramis
 ---
-#porcelan-figura
-#  title: Porcelán figura
-#  description: Porcelán figura (Herend)
-#  image: asset/img/abra/porcelan-figura.png
-#  date: 2018-??-??
 #teknos:
 #  title: Teknős
 #  description: Szárazföldi teknős
 #  image: asset/img/abra/teknos.jpg
 #  date: 2018-??-??
+porcelan-figura:
+  title: Porcelán figura
+  description: Porcelán figura (Herend)
+  image: asset/img/abra/porcelan-figura.png
+  date: 2018-08-04
 gatyas-beka:
   title: Gatyás béka
   description: Csak egy béka gyatyában
