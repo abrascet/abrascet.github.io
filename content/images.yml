@@ -15,11 +15,11 @@
 # urhajo
 # piramis
 ---
-#teknos:
-#  title: Teknős
-#  description: Szárazföldi teknős
-#  image: asset/img/abra/teknos.jpg
-#  date: 2018-??-??
+teknos:
+  title: Teknős
+  description: Szárazföldi teknős
+  image: asset/img/abra/teknos.jpg
+  date: 2018-08-19
 porcelan-figura:
   title: Porcelán figura
   description: Porcelán figura (Herend)
