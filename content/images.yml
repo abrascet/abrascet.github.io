@@ -1,20 +1,25 @@
 # Images: new entries come first
-# banya
-# osember
-# homokvar
-# cica
-# kalocsa
-# lada
-# motor
-# narancsle2
-# sajt
-# stefan
-# szalami
-# turista
-# ur
+# banya +
+# osember +
+# homokvar +
+# macska +
+# kalocsai-minta +
+# kincseslada +
+# motor +
+# turista +
+# ur +
 # urhajo
-# piramis
+# piramis +
+# dr-stefan +
+# sajt v
+# narancsle v
+# szalami v
 ---
+turista:
+  title: Turista
+  description: Turista (homo irrito itinearius)
+  image: asset/img/abra/turista.png
+  date: 2018-08-24
 teknos:
   title: Teknős
   description: Szárazföldi teknős
