@@ -876,6 +876,10 @@ img {
   display: none;
 }
 
+.archive-list {
+  columns: 1;
+}
+
 .social-share .social-share-link {
   margin-left: 0.6rem;
 }
@@ -924,5 +928,9 @@ img {
 
   .pagination .pagination-caption, .social-share .social-share-caption {
     display: inline;
+  }
+
+  .archive-list {
+    columns: 2;
   }
 }
