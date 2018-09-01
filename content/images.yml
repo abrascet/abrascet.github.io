@@ -2,7 +2,6 @@
 # banya +
 # osember +
 # homokvar +
-# macska +
 # kalocsai-minta +
 # kincseslada +
 # motor +
@@ -15,6 +14,11 @@
 # szalami +
 # kavics + jpg
 ---
+macska:
+  title: Macska
+  description: Házi macska (Felis silvestris catus)
+  image: asset/img/abra/macska.png
+  date: 2018-09-01
 turista:
   title: Turista
   description: Turista (homo irrito itinearius)
