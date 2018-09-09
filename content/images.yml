@@ -4,7 +4,6 @@
 # homokvar +
 # kalocsai-minta +
 # kincseslada +
-# motor +
 # ur +
 # urhajo +
 # piramis +
@@ -14,6 +13,11 @@
 # szalami +
 # kavics + jpg
 ---
+simson-motor:
+  title: Motor
+  description: Simson S50, vagy valami hasonló
+  image: asset/img/abra/motor.png
+  date: 2018-09-09
 macska:
   title: Macska
   description: Házi macska (Felis silvestris catus)
