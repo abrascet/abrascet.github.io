@@ -134,7 +134,6 @@ about_page = create_about_page()
 site_model = YAML.load_file("../content/site.yml")
 site_model["pages"] = {
   "home" => home_page,
-  "images" => image_pages[0],
   "archive" => archive_page,
   "about" => about_page
 }

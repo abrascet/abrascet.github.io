@@ -7,6 +7,5 @@ site:
   domain: https://www.abras-cet.hu
 navigation:
   home: *siteName
-  images: Képek
-  archive: Archív
+  archive: Képek
   about: A cetről
