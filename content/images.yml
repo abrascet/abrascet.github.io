@@ -6,13 +6,17 @@
 # kincseslada +
 # ur +
 # urhajo +
-# piramis +
 # dr-stefan +
 # sajt +
 # narancsle +
 # szalami +
 # kavics + jpg
 ---
+egyiptom:
+  title: Egyiptom
+  description: Piramisok
+  image: asset/img/abra/piramis.png
+  date: 2018-09-16
 simson-motor:
   title: Motor
   description: Simson S50, vagy valami hasonló
