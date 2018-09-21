@@ -1,5 +1,4 @@
 # Images: new entries come first
-# banya +
 # osember +
 # homokvar +
 # kalocsai-minta +
@@ -12,6 +11,11 @@
 # szalami +
 # kavics + jpg
 ---
+banya:
+  title: Banya
+  description: Banya csak egy van
+  image: asset/img/abra/banya.png
+  date: 2018-09-21
 egyiptom:
   title: Egyiptom
   description: Piramisok
