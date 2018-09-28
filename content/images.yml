@@ -11,6 +11,11 @@
 # szalami +
 # kavics + jpg
 ---
+dr-stefan:
+  title: Dr. Stefan
+  description: Dr. Stefan, a sajtkészítés tudomány Arany Sajt-díjas professzora
+  image: asset/img/abra/dr-stefan.png
+  date: 2018-09-28
 banya:
   title: Banya
   description: Banya nem csak egy van

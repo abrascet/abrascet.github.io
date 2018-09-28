@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/dr-stefan.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/dr-stefan.png</image:loc>
+      <image:title>Dr. Stefan</image:title>
+      <image:caption>Dr. Stefan, a sajtkészítés tudomány Arany Sajt-díjas professzora</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/banya.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/banya.png</image:loc>
