@@ -98,8 +98,9 @@ end
 def create_home_page(image_pages)
   model = YAML.load_file("../content/home.yml")
   model = image_pages.first.model.merge(model)
-  model["meta"] = {} if model["meta"].nil?
-  model["meta"]["canonical"] = image_pages.first.link
+  # Let Google decide which page to index
+  # model["meta"] = {} if model["meta"].nil?
+  # model["meta"]["canonical"] = image_pages.first.link
   Page.new("index", "image.erb", model)
 end
 
