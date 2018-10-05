@@ -6,12 +6,16 @@
 # ur +
 # urhajo +
 # dr-stefan +
-# sajt +
 # narancsle +
 # szalami +
 # kavics + jpg
 # szep-nap +
 ---
+sajt:
+  title: Sajt
+  description: Dr. Stefan új találmánya a stefanbert sajt, amit a camambert, cheddar és parmezán sajtok genetikai keresztezéséből állított elő.
+  image: asset/img/abra/sajt.png
+  date: 2018-10-05
 dr-stefan:
   title: Dr. Stefan
   description: Dr. Stefan sajtkutató, a sajtkészítés tudomány Arany Sajt-díjas professzora

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/sajt.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/sajt.png</image:loc>
+      <image:title>Sajt</image:title>
+      <image:caption>Dr. Stefan új találmánya a stefanbert sajt, amit a camambert, cheddar és parmezán sajtok genetikai keresztezéséből állított elő.</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/dr-stefan.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/dr-stefan.png</image:loc>
