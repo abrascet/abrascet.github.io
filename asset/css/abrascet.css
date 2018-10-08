@@ -872,6 +872,11 @@ img {
   margin-bottom: 1rem;
 }
 
+.pagination .button {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
 .pagination .pagination-caption {
   display: none;
 }
