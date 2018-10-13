@@ -9,9 +9,13 @@
 # narancsle +
 # szalami +
 # kavics + jpg
-# szep-nap +
 # hajo + jpg
 ---
+szep-nap:
+  title: Szép nap
+  description: Szép napot! (reggeli firka a feleségemnek)
+  image: asset/img/abra/szep-nap.png
+  date: 2018-10-13
 sajt:
   title: Sajt
   description: Dr. Stefan új találmánya a stefanbert sajt, amit a camambert, cheddar és parmezán sajtok genetikai keresztezéséből állított elő.
