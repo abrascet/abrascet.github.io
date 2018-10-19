@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/szalami.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/szalami.png</image:loc>
+      <image:title>Szalámi</image:title>
+      <image:caption>Minden jó, ha a vége jó (főleg a szalámi)</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/szep-nap.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/szep-nap.png</image:loc>

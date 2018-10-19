@@ -7,10 +7,14 @@
 # urhajo +
 # dr-stefan +
 # narancsle +
-# szalami +
 # kavics + jpg
 # hajo + jpg
 ---
+szalami:
+  title: Szalámi
+  description: Minden jó, ha a vége jó (főleg a szalámi)
+  image: asset/img/abra/szalami.png
+  date: 2018-10-19
 szep-nap:
   title: Szép nap
   description: Szép napot! (reggeli firka a feleségemnek)
