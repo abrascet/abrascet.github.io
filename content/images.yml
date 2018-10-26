@@ -9,8 +9,12 @@
 # narancsle +
 # kavics + jpg
 # hajo + jpg
-# kakukk + jpg
 ---
+kakukk:
+  title: Kakukk
+  description: Gyalogkakukk fióka (reggeli firka a feleségemnek)
+  image: asset/img/abra/kakukk.jpg
+  date: 2018-10-26
 szalami:
   title: Szalámi
   description: Minden jó, ha a vége jó (kivéve a szalámi)
