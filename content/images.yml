@@ -2,7 +2,6 @@
 # osember +
 # homokvar +
 # kalocsai-minta +
-# kincseslada +
 # ur +
 # urhajo +
 # dr-stefan +
@@ -10,6 +9,11 @@
 # kavics + jpg
 # hajo + jpg
 ---
+kincseslada:
+  title: Kincsesláda
+  description: Nem mind arany, ami fénylik.
+  image: asset/img/abra/kincseslada.png
+  date: 2018-11-02
 kakukk:
   title: Kakukk
   description: Gyalogkakukk fióka (reggeli firka a feleségemnek)
