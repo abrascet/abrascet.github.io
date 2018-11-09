@@ -7,8 +7,12 @@
 # dr-stefan +
 # narancsle +
 # kavics + jpg
-# hajo + jpg
 ---
+hajo:
+  title: Hajó
+  description: Akkor jó a jó hajó, ha jó a jó hajó hajóvitorlája. (üzenőtábla rajz)
+  image: asset/img/abra/hajo.jpg
+  date: 2018-11-09
 kincseslada:
   title: Kincsesláda
   description: Nem mind arany, ami fénylik.
