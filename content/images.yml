@@ -1,5 +1,4 @@
 # Images: new entries come first
-# osember +
 # homokvar +
 # kalocsai-minta +
 # ur +
@@ -8,6 +7,11 @@
 # narancsle +
 # kavics + jpg
 ---
+osember:
+  title: Ősember
+  description: Ősember ős prémium prémben
+  image: asset/img/abra/osember.png
+  date: 2018-11-18
 hajo:
   title: Hajó
   description: Akkor jó a jó hajó, ha jó a jó hajó hajóvitorlája. (üzenőtábla rajz)
