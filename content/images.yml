@@ -3,10 +3,13 @@
 # kalocsai-minta +
 # ur +
 # urhajo +
-# dr-stefan +
 # narancsle +
-# kavics + jpg
 ---
+kavics:
+  title: Kavics
+  description: "Kavics: megtalálható folyómedrekben és cipők belsejében"
+  image: asset/img/abra/kavics.jpg
+  date: 2018-11-24
 osember:
   title: Ősember
   description: Ősember ős prémium prémben
