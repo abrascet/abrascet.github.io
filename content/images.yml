@@ -3,8 +3,12 @@
 # kalocsai-minta +
 # ur +
 # urhajo +
-# narancsle +
 ---
+narancsle:
+  title: Narancslé
+  description: Itt a narancslét a tét!
+  image: asset/img/abra/narancsle.png
+  date: 2018-11-30
 kavics:
   title: Kavics
   description: "Kavics: megtalálható folyómedrekben és cipők belsejében"
