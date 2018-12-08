@@ -2,8 +2,12 @@
 # homokvar +
 # kalocsai-minta +
 # ur +
-# urhajo +
 ---
+urhajo:
+  title: Űrhajó
+  description: Mit csinál a szomjas űrhajós? Űrkutatás.
+  image: asset/img/abra/urhajo.png
+  date: 2018-12-08
 narancsle:
   title: Narancslé
   description: Itt a narancslét a tét!
