@@ -1,8 +1,12 @@
 # Images: new entries come first
 # homokvar +
-# kalocsai-minta +
 # ur +
 ---
+kalocsai-minta:
+  title: Kalocsai minta
+  description: Kalocsai hímzés
+  image: asset/img/abra/kalocsai-minta.png
+  date: 2018-12-16
 urhajo:
   title: Űrhajó
   description: Mit csinál a szomjas űrhajós? Űrkutatás.
