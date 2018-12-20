@@ -1,23 +1,51 @@
 # Images: new entries come first
-# homokvar +
-# ur +
 # auto
 # bastya
 # belyeg
-# cola
 # csirke
 # hajo?
 # halaszle
 # hamburger
 # haz del/ej
-# honap januar hideg?
-# jeg
-# kaktusz
-# pezsgo
 # pizza
 # polip
 # regi telefon
 # taxi
+#cola:
+#  title: Cola
+#  description: ???
+#  image: asset/img/abra/cola.png
+#  date: ???
+#jeg:
+#  title: Jég
+#  description: Hogy hívják a számítógép-mániás eszkimót? Jégkocka.
+#  image: asset/img/abra/jeg.png
+#  date: ???
+#homokvar:
+#  title: Homokvár
+#  description: ???
+#  image: asset/img/abra/homokvar.png
+#  date: ???
+#ur:
+#  title: Úr
+#  description:
+#  image: asset/img/abra/ur.png
+#  date: ???
+#pezsgo:
+#  title: Pezsgő
+#  description: Havas téli lepedő borítja a tájat, ilyenkor a jó pezsgő serkenti a májat. Sült malacka vándorol a bendőbe, kívánok sok-sok jót az új esztendőre!
+#  image: asset/img/abra/pezsgo.png
+#  date: ???
+#kaktusz:
+#  title: Kaktusz
+#  description: Majdcsak kilyukadunk valahol! - mondta a lufi a mexikói kaktuszmezőn
+#  image: asset/img/abra/kaktusz.png
+#  date: ???
+#hideg:
+#  title: Hideg
+#  description: A téli mínuszokban is fontos a pozitív hozzáállás: legalább nincs szúnyog!
+#  image: asset/img/abra/hideg.png
+#  date: ???
 ---
 kalocsai-minta:
   title: Kalocsai minta
