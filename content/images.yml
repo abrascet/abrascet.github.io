@@ -6,11 +6,15 @@
 # hajo?
 # halaszle
 # hamburger
-# haz del/ej
 # pizza
 # polip
 # regi telefon
 # taxi
+#haz:
+#  title: Ház
+#  description: ???
+#  image: asset/img/abra/haz.gif
+#  date: ???
 #cola:
 #  title: Cola
 #  description: ???
