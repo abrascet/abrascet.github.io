@@ -45,12 +45,12 @@
 #  description: Majdcsak kilyukadunk valahol! - mondta a lufi a mexikói kaktuszmezőn
 #  image: asset/img/abra/kaktusz.png
 #  date: ???
-#hideg:
-#  title: Hideg
-#  description: A téli mínuszokban is fontos a pozitív hozzáállás: legalább nincs szúnyog!
-#  image: asset/img/abra/hideg.png
-#  date: ???
 ---
+hideg:
+  title: Hideg
+  description: "A téli mínuszokban is fontos a pozitív hozzáállás: legalább nincs szúnyog!"
+  image: asset/img/abra/hideg.png
+  date: 2018-12-21
 kalocsai-minta:
   title: Kalocsai minta
   description: Kalocsai hímzés

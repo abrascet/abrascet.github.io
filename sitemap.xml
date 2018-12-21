@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/hideg.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/hideg.png</image:loc>
+      <image:title>Hideg</image:title>
+      <image:caption>A téli mínuszokban is fontos a pozitív hozzáállás: legalább nincs szúnyog!</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/kalocsai-minta.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/kalocsai-minta.png</image:loc>
