@@ -51,12 +51,12 @@
 #  description:
 #  image: asset/img/abra/ur.png
 #  date: ???
-#kaktusz:
-#  title: Kaktusz
-#  description: Majdcsak kilyukadunk valahol! - mondta a lufi a mexikói kaktuszmezőn
-#  image: asset/img/abra/kaktusz.png
-#  date: ???
 ---
+kaktusz:
+  title: Kaktusz
+  description: Majdcsak kilyukadunk valahol! - mondta a lufi a mexikói kaktuszmezőn
+  image: asset/img/abra/kaktusz.png
+  date: 2019-01-04
 buek:
   title: BÚÉK
   description: Havas téli lepedő borítja a tájat, ilyenkor a jó pezsgő serkenti a májat. Sült malacka vándorol a bendőbe, kívánok sok jót az új esztendőre!
