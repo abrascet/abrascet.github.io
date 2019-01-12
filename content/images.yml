@@ -36,11 +36,6 @@
 #  description: ???
 #  image: asset/img/abra/cola.png
 #  date: ???
-#jeg:
-#  title: Jég
-#  description: Hogy hívják a számítógép-mániás eszkimót? Jégkocka.
-#  image: asset/img/abra/jeg.png
-#  date: ???
 #homokvar:
 #  title: Homokvár
 #  description: ???
@@ -52,6 +47,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+jeg:
+  title: Jég
+  description: Hogy hívják az eszkimó programozót? Jégkocka.
+  image: asset/img/abra/jeg.png
+  date: 2019-01-12
 kaktusz:
   title: Kaktusz
   description: Majdcsak kilyukadunk valahol! - mondta a lufi a mexikói kaktuszmezőn
