@@ -26,11 +26,6 @@
 # bacsi
 # kutya
 # pezsgo +
-#haz:
-#  title: Ház
-#  description: "Az idő illúzió. (&hellip;) Az ebédidő kétszeresen az. &ndash; Douglas Adams"
-#  image: asset/img/abra/haz.gif
-#  date: ???
 #cola:
 #  title: Cola
 #  description: ???
@@ -47,6 +42,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+haz:
+  title: Ház
+  description: "Az idő illúzió. (&hellip;) Az ebédidő kétszeresen az. &ndash; Douglas Adams"
+  image: asset/img/abra/haz.gif
+  date: 2019-01-19
 jeg:
   title: Jég
   description: Hogy hívják az eszkimó programozót? Jégkocka.
