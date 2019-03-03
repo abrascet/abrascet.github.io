@@ -26,17 +26,17 @@
 # bacsi
 # kutya
 # pezsgo +
-#homokvar:
-#  title: Homokvár
-#  description: ???
-#  image: asset/img/abra/homokvar.png
-#  date: ???
 #ur:
 #  title: Úr
 #  description:
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+homokvar:
+  title: Homokvár
+  description: Két kígyó megy a sivatagban. Az egyik elfordul jobbra, a másik kobra...
+  image: asset/img/abra/homokvar.png
+  date: 2019-03-03
 cola:
   title: Cola
   description: Feleségem fogyókúra után. (gy.k. kólásüveg-alak)
