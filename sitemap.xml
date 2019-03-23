@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/kutya.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/kutya.png</image:loc>
+      <image:title>Kutya</image:title>
+      <image:caption>Két bolha beszélget: - Te mit csinálnál, ha nyernél a lottón? - Hát, először is vennék egy jó nagy kutyát!</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/homokvar.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/homokvar.png</image:loc>
       <image:title>Homokvár</image:title>
-      <image:caption>Két kígyó megy a sivatagban. Az egyik elfordul jobbra, a másik kobra...</image:caption>
+      <image:caption>Csak egy homokvár</image:caption>
       <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
     </image:image>
   </url>

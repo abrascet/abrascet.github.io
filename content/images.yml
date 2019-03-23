@@ -4,14 +4,14 @@
 # belyeg
 # csirke
 # hajo?
-# halaszle
+# halaszle +
 # hamburger
 # pizza
 # polip
 # regi telefon
 # taxi
-# majom
-# elefant
+# majom +
+# elefant +
 # torta
 # toll
 # nyuszi + repa
@@ -24,7 +24,6 @@
 # haz: reggel-deblben-este
 # furkós botond
 # bacsi
-# kutya
 # pezsgo +
 #ur:
 #  title: Úr
@@ -32,9 +31,14 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+kutya:
+  title: Kutya
+  description: "Két bolha beszélget: - Te mit csinálnál, ha nyernél a lottón? - Hát, először is vennék egy jó nagy kutyát!"
+  image: asset/img/abra/kutya.png
+  date: 2019-03-23
 homokvar:
   title: Homokvár
-  description: Két kígyó megy a sivatagban. Az egyik elfordul jobbra, a másik kobra...
+  description: Csak egy homokvár
   image: asset/img/abra/homokvar.png
   date: 2019-03-03
 cola:
