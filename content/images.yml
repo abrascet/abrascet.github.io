@@ -11,7 +11,6 @@
 # regi telefon
 # taxi
 # majom +
-# elefant +
 # torta
 # toll
 # nyuszi + repa
@@ -31,6 +30,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+elefant:
+  title: Elefánt
+  description: "Honnan tudod hogy az elefánt fönn van a fán? A fának van támasztva a biciklije."
+  image: asset/img/abra/elefant.png
+  date: 2019-03-29
 kutya:
   title: Kutya
   description: "Két bolha beszélget: - Te mit csinálnál, ha nyernél a lottón? - Hát, először is vennék egy jó nagy kutyát!"
