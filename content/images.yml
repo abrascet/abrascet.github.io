@@ -10,7 +10,6 @@
 # polip
 # regi telefon
 # taxi
-# majom +
 # torta
 # toll
 # nyuszi + repa
@@ -30,6 +29,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+majom:
+  title: Majom
+  description: Majom az ebédjével
+  image: asset/img/abra/majom.png
+  date: 2019-04-13
 elefant:
   title: Elefánt
   description: "Honnan tudod hogy az elefánt fönn van a fán? A fának van támasztva a biciklije."
