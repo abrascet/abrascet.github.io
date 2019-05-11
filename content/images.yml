@@ -4,7 +4,6 @@
 # belyeg
 # csirke
 # hajo?
-# halaszle +
 # hamburger
 # pizza
 # polip
@@ -27,11 +26,16 @@
 #  description:
 #  image: asset/img/abra/ur.png
 #  date: ???
+#hotdog:
+#  title: Hot dog
+#  description: "Hot dog, magyarul: vifli (kifliben virsli)"
+#  image: asset/img/abra/hotdog.png
+#  date: ???
 ---
-hotdog:
-  title: Hot dog
-  description: "Hot dog, magyarul: vifli (kifliben virsli)"
-  image: asset/img/abra/hotdog.png
+halaszle:
+  title: Halászlé
+  description: Halászlé
+  image: asset/img/abra/halaszle.png
   date: 2019-05-11
 majom:
   title: Majom
