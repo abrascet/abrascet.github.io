@@ -17,7 +17,6 @@
 # laptop
 # kivi
 # iskolataska
-# hotdog
 # meleg
 # haz: reggel-deblben-este
 # furkós botond
@@ -29,6 +28,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+hotdog:
+  title: Hot dog
+  description: "Hot dog, magyarul: vifli (kifliben virsli)"
+  image: asset/img/abra/hotdog.png
+  date: 2019-05-11
 majom:
   title: Majom
   description: Majom az ebédjével
