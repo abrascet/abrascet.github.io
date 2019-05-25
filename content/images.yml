@@ -1,11 +1,11 @@
 # Images: new entries come first
-# auto
+# auto +
 # bastya
 # belyeg
 # csirke
 # hajo?
-# hamburger
-# pizza
+# hamburger +
+# pizza +
 # polip
 # regi telefon
 # taxi
@@ -26,12 +26,12 @@
 #  description:
 #  image: asset/img/abra/ur.png
 #  date: ???
-#hotdog:
-#  title: Hot dog
-#  description: "Hot dog, magyarul: vifli (kifliben virsli)"
-#  image: asset/img/abra/hotdog.png
-#  date: ???
 ---
+hotdog:
+  title: Hot dog
+  description: "Hot dog, magyarul: vifli (kifliben virsli)"
+  image: asset/img/abra/hotdog.png
+  date: 2019-05-25
 halaszle:
   title: Halászlé
   description: Halászlé
@@ -59,7 +59,7 @@ homokvar:
   date: 2019-03-03
 cola:
   title: Cola
-  description: Feleségem fogyókúra után. (gy.k. kólásüveg-alak)
+  description: Kólásüveg
   image: asset/img/abra/cola.png
   date: 2019-01-29
 haz:
