@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/hotdog.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/hotdog.png</image:loc>
+      <image:title>Hot dog</image:title>
+      <image:caption>Hot dog, magyarul: vifli (kifliben virsli)</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/halaszle.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/halaszle.png</image:loc>
@@ -50,7 +59,7 @@
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/cola.png</image:loc>
       <image:title>Cola</image:title>
-      <image:caption>Feleségem fogyókúra után. (gy.k. kólásüveg-alak)</image:caption>
+      <image:caption>Kólásüveg</image:caption>
       <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
     </image:image>
   </url>
