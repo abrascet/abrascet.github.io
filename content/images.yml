@@ -10,12 +10,10 @@
 # taxi
 # torta
 # toll
-# nyuszi + repa
-# medve + mez
+# nyuszi es repa
 # laptop
 # kivi
 # iskolataska
-# meleg
 # haz: reggel-deblben-este
 # furkós botond
 # bacsi
@@ -24,6 +22,16 @@
 #  title: Úr
 #  description:
 #  image: asset/img/abra/ur.png
+#  date: ???
+#mez:
+#  title: Méz
+#  description:
+#  image: asset/img/abra/mez.png
+#  date: ???
+#meleg:
+#  title: Meleg
+#  description:
+#  image: asset/img/abra/meleg.png
 #  date: ???
 ---
 pizza:
