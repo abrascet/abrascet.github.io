@@ -5,7 +5,6 @@
 # csirke
 # hajo?
 # hamburger +
-# pizza +
 # polip
 # regi telefon
 # taxi
@@ -27,6 +26,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+pizza:
+  title: Pizza
+  description: "Vágd azt a pizzát inkább négybe, nem vagyok annyira éhes, hogy hat szeletet megegyek. &ndash; Yogi Berra"
+  image: asset/img/abra/pizza.png
+  date: 2019-06-10
 hotdog:
   title: Hot dog
   description: "Hot dog, magyarul: vifli (kifliben virsli)"

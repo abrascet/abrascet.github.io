@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/pizza.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/pizza.png</image:loc>
+      <image:title>Pizza</image:title>
+      <image:caption>Vágd azt a pizzát inkább négybe, nem vagyok annyira éhes, hogy hat szeletet megegyek. &ndash; Yogi Berra</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/hotdog.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/hotdog.png</image:loc>
