@@ -28,12 +28,12 @@
 #  description:
 #  image: asset/img/abra/mez.png
 #  date: ???
-#meleg:
-#  title: Meleg
-#  description:
-#  image: asset/img/abra/meleg.png
-#  date: ???
 ---
+meleg:
+  title: Meleg
+  description: "Még szerencse, hogy nincs hó! Kinek lenne kedve havat lapátolni ilyen melegben?!"
+  image: asset/img/abra/meleg.png
+  date: 2019-06-17
 pizza:
   title: Pizza
   description: "Vágd azt a pizzát inkább négybe, nem vagyok annyira éhes, hogy hat szeletet megegyek. &ndash; Yogi Berra"
