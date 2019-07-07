@@ -23,12 +23,12 @@
 #  description:
 #  image: asset/img/abra/ur.png
 #  date: ???
-#mez:
-#  title: Méz
-#  description:
-#  image: asset/img/abra/mez.png
-#  date: ???
 ---
+mez:
+  title: Méz
+  description: Méz és maci
+  image: asset/img/abra/mez.png
+  date: 2019-07-07
 meleg:
   title: Meleg
   description: "Még szerencse, hogy nincs hó! Kinek lenne kedve havat lapátolni ilyen melegben?!"
