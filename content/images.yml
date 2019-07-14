@@ -4,7 +4,6 @@
 # belyeg +
 # csirke
 # hajo?
-# hamburger +
 # polip +
 # regi telefon
 # taxi
@@ -24,6 +23,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+hamburger:
+  title: Hamburger
+  description: "Mi az, amikor a hamburger mosolyog? Kaján vigyor."
+  image: asset/img/abra/hamburger.png
+  date: 2019-07-14
 mez:
   title: Méz
   description: Méz és maci
