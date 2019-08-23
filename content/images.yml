@@ -4,7 +4,6 @@
 # belyeg +
 # csirke
 # hajo?
-# polip +
 # regi telefon
 # taxi
 # torta
@@ -23,6 +22,11 @@
 #  image: asset/img/abra/ur.png
 #  date: ???
 ---
+polip:
+  title: Polip
+  description: "Székely és a fia polipot fogtak az erdőben. Megszólal a székely: &ndash; Hát, fiam, marhára eltévedtünk!"
+  image: asset/img/abra/polip.png
+  date: 2019-08-23
 hamburger:
   title: Hamburger
   description: "Mi az, amikor a hamburger mosolyog? Kaján vigyor."

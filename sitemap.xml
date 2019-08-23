@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/polip.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/polip.png</image:loc>
+      <image:title>Polip</image:title>
+      <image:caption>Székely és a fia polipot fogtak az erdőben. Megszólal a székely: &ndash; Hát, fiam, marhára eltévedtünk!</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/hamburger.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/hamburger.png</image:loc>
