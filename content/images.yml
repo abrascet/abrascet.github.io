@@ -16,12 +16,12 @@
 # furkós botond
 # bacsi
 # pezsgo +
-#ur:
-#  title: Úr
-#  description:
-#  image: asset/img/abra/ur.png
-#  date: ???
 ---
+urasag:
+  title: Uraság
+  description: "&ndash; Jean, evezzen ki a korallzátonyhoz! &ndash; De miért uram? &ndash; Mert haladni kell a korall!"
+  image: asset/img/abra/ur.png
+  date: 2019-10-27
 polip:
   title: Polip
   description: "Székely és a fia polipot fogtak az erdőben. Megszólal a székely: &ndash; Hát, fiam, marhára eltévedtünk!"

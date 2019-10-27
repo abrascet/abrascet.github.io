@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/urasag.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/ur.png</image:loc>
+      <image:title>Uraság</image:title>
+      <image:caption>&ndash; Jean, evezzen ki a korallzátonyhoz! &ndash; De miért uram? &ndash; Mert haladni kell a korall!</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/polip.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/polip.png</image:loc>
