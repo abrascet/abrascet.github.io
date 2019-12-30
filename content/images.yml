@@ -1,5 +1,4 @@
 # Images: new entries come first
-# auto +
 # bastya
 # belyeg +
 # csirke
@@ -17,6 +16,11 @@
 # bacsi
 # pezsgo +
 ---
+auto:
+  title: Autó
+  description: "&ndash; Mi a különbség egy Trabant és a Ford között? &ndash; A Trabanttal meg lehet fordulni, de a Forddal nem lehet megtrabantulni."
+  image: asset/img/abra/auto.png
+  date: 2019-12-30
 urasag:
   title: Uraság
   description: "&ndash; Jean, evezzen ki a korallzátonyhoz! &ndash; De miért uram? &ndash; Mert haladni kell a korall!"
