@@ -1,6 +1,5 @@
 # Images: new entries come first
 # bastya
-# belyeg +
 # csirke
 # hajo?
 # regi telefon
@@ -16,6 +15,11 @@
 # bacsi
 # pezsgo +
 ---
+belyeg:
+  title: Bélyeg
+  description: "&ndash; Mit gondolsz, melyik gyorsabb: a postagalamb vagy a ló? &ndash; Gyalog a ló..."
+  image: asset/img/abra/belyeg.png
+  date: 2019-02-09
 auto:
   title: Autó
   description: "&ndash; Mi a különbség egy Trabant és a Ford között? &ndash; A Trabanttal meg lehet fordulni, de a Forddal nem lehet megtrabantulni."
