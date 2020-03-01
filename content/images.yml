@@ -6,7 +6,6 @@
 # taxi
 # torta
 # toll
-# nyuszi es repa
 # laptop
 # kivi
 # iskolataska
@@ -15,11 +14,16 @@
 # bacsi
 # pezsgo +
 ---
+nyuszi:
+  title: Nyuszi
+  description: "&ndash; Sárgarépa van? &ndash; Nincs nyuszika, csak banán van. &ndash; Akkor irány Bana!"
+  image: asset/img/abra/nyuszi.png
+  date: 2020-03-01
 belyeg:
   title: Bélyeg
   description: "&ndash; Mit gondolsz, melyik gyorsabb: a postagalamb vagy a ló? &ndash; Gyalog a ló..."
   image: asset/img/abra/belyeg.png
-  date: 2019-02-09
+  date: 2020-02-09
 auto:
   title: Autó
   description: "&ndash; Mi a különbség egy Trabant és a Ford között? &ndash; A Trabanttal meg lehet fordulni, de a Forddal nem lehet megtrabantulni."
