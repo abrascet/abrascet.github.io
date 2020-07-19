@@ -14,6 +14,11 @@
 # bacsi
 # pezsgo +
 ---
+bastya:
+  title: Bástya
+  description: "&ndash; Miért nincs a vonaton bástya? &ndash; Mert a vonat nem vár."
+  image: asset/img/abra/bastya.png
+  date: 2020-07-19
 nyuszi:
   title: Nyuszi
   description: "&ndash; Sárgarépa van? &ndash; Nincs nyuszika, csak banán van. &ndash; Akkor irány Bana!"
