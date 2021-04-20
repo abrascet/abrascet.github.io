@@ -1,5 +1,4 @@
 # Images: new entries come first
-# bastya
 # csirke
 # hajo?
 # regi telefon
@@ -10,10 +9,14 @@
 # kivi
 # iskolataska
 # haz: reggel-deblben-este
-# furkós botond
 # bacsi
 # pezsgo +
 ---
+furkos-botond:
+  title: Furkós Botond
+  description: A név kötelez?
+  image: asset/img/abra/furkos-botond.png
+  date: 2021-04-20
 bastya:
   title: Bástya
   description: "&ndash; Miért nincs a vonaton bástya? &ndash; Mert a vonat nem vár."

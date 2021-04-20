@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/furkos-botond.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/furkos-botond.png</image:loc>
+      <image:title>Furkós Botond</image:title>
+      <image:caption>A név kötelez?</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/bastya.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/bastya.png</image:loc>
