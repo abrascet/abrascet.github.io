@@ -3,10 +3,10 @@
     <h1 class="image-title"><%= @model['title'] %></h1>
 <% if @model['link'] != @link -%>
     <a href="<%= href @model['link'] %>">
-      <img src="<%= href @model['image'] %>" alt="<%= @model['title'] %>">
+      <img src="<%= href @model['image'] %>" alt="<%= @model['title'] %>" onerror="this.onerror=null; this.src='<%= @model['fallback'] %>'">
     </a>
 <% else -%>
-    <img src="<%= href @model['image'] %>" alt="<%= @model['title'] %>">
+    <img src="<%= href @model['image'] %>" alt="<%= @model['title'] %>" onerror="this.onerror=null; this.src='<%= @model['fallback'] %>'">
 <% end -%>
 <% if @model['description'] -%>
     <p class="image-description"><%= @model['description'] %></p>

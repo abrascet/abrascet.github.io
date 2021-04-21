@@ -79,6 +79,8 @@ def create_image_pages()
   pages = []
   previous_page = nil
   YAML.load_file("../content/images.yml").each do |key, model|
+    model['fallback'] = model['image']
+    model['image'] = model['image'].sub(File.extname(model['image']), '.webp')
     current_page = Page.new(key, "image.erb", model, "abra")
     if previous_page
       current_page.model["next"] = previous_page.link
