@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">BÚÉK</h1>
-    <img src="../asset/img/abra/buek.webp" alt="BÚÉK" onerror="this.onerror=null; this.src='asset/img/abra/buek.png'">
+    <img src="../asset/img/abra/buek.webp" alt="BÚÉK" onerror="this.onerror=null; this.src='asset/img/abra/buek.png'" width="700" height="700">
     <p class="image-description">Havas téli lepedő borítja a tájat, ilyenkor a jó pezsgő serkenti a májat. Sült malacka vándorol a bendőbe, kívánok sok jót az új esztendőre!</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/buek.html"
   },
   "headline": "BÚÉK",
-  "image": "https://www.abras-cet.hu/asset/img/abra/buek.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/buek.webp",
+    "width": 700,
+    "height": 700
+  },
   "datePublished": "2018-12-29",
   "dateModified": "2018-12-29",
   "description": "Havas téli lepedő borítja a tájat, ilyenkor a jó pezsgő serkenti a májat. Sült malacka vándorol a bendőbe, kívánok sok jót az új esztendőre!",

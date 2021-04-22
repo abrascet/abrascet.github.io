@@ -9,7 +9,12 @@
     "@id": "<%= absolute_url @model['site']['domain'] %>"
   },
   "headline": "<%= @model['title'] %>",
-  "image": "<%= absolute_url @model['site']['domain'], @model['image'] %>",
+  "image": {
+    "@type": "ImageObject",
+    "url": "<%= absolute_url @model['site']['domain'], @model['image'] %>",
+    "width": <%= @model['width'] %>,
+    "height": <%= @model['height'] %>
+  },
   "datePublished": "<%= @model['date'] %>",
   "dateModified": "<%= @model['date'] %>",
 <% else -%>

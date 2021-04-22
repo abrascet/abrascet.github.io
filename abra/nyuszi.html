@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">Nyuszi</h1>
-    <img src="../asset/img/abra/nyuszi.webp" alt="Nyuszi" onerror="this.onerror=null; this.src='asset/img/abra/nyuszi.png'">
+    <img src="../asset/img/abra/nyuszi.webp" alt="Nyuszi" onerror="this.onerror=null; this.src='asset/img/abra/nyuszi.png'" width="700" height="700">
     <p class="image-description">&ndash; Sárgarépa van? &ndash; Nincs nyuszika, csak banán van. &ndash; Akkor irány Bana!</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/nyuszi.html"
   },
   "headline": "Nyuszi",
-  "image": "https://www.abras-cet.hu/asset/img/abra/nyuszi.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/nyuszi.webp",
+    "width": 700,
+    "height": 700
+  },
   "datePublished": "2020-03-01",
   "dateModified": "2020-03-01",
   "description": "&ndash; Sárgarépa van? &ndash; Nincs nyuszika, csak banán van. &ndash; Akkor irány Bana!",

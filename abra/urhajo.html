@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">Űrhajó</h1>
-    <img src="../asset/img/abra/urhajo.webp" alt="Űrhajó" onerror="this.onerror=null; this.src='asset/img/abra/urhajo.png'">
+    <img src="../asset/img/abra/urhajo.webp" alt="Űrhajó" onerror="this.onerror=null; this.src='asset/img/abra/urhajo.png'" width="700" height="700">
     <p class="image-description">&ndash; Mit csinál a szomjas űrhajós? &ndash; Űrkutatás.</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/urhajo.html"
   },
   "headline": "Űrhajó",
-  "image": "https://www.abras-cet.hu/asset/img/abra/urhajo.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/urhajo.webp",
+    "width": 700,
+    "height": 700
+  },
   "datePublished": "2018-12-08",
   "dateModified": "2018-12-08",
   "description": "&ndash; Mit csinál a szomjas űrhajós? &ndash; Űrkutatás.",

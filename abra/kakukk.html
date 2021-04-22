@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">Kakukk</h1>
-    <img src="../asset/img/abra/kakukk.webp" alt="Kakukk" onerror="this.onerror=null; this.src='asset/img/abra/kakukk.jpg'">
+    <img src="../asset/img/abra/kakukk.webp" alt="Kakukk" onerror="this.onerror=null; this.src='asset/img/abra/kakukk.jpg'" width="700" height="525">
     <p class="image-description">Gyalogkakukk fióka (reggeli firka a feleségemnek)</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/kakukk.html"
   },
   "headline": "Kakukk",
-  "image": "https://www.abras-cet.hu/asset/img/abra/kakukk.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/kakukk.webp",
+    "width": 700,
+    "height": 525
+  },
   "datePublished": "2018-10-26",
   "dateModified": "2018-10-26",
   "description": "Gyalogkakukk fióka (reggeli firka a feleségemnek)",

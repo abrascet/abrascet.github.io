@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">Bélyeg</h1>
-    <img src="../asset/img/abra/belyeg.webp" alt="Bélyeg" onerror="this.onerror=null; this.src='asset/img/abra/belyeg.png'">
+    <img src="../asset/img/abra/belyeg.webp" alt="Bélyeg" onerror="this.onerror=null; this.src='asset/img/abra/belyeg.png'" width="700" height="700">
     <p class="image-description">&ndash; Mit gondolsz, melyik gyorsabb: a postagalamb vagy a ló? &ndash; Gyalog a ló&hellip;</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/belyeg.html"
   },
   "headline": "Bélyeg",
-  "image": "https://www.abras-cet.hu/asset/img/abra/belyeg.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/belyeg.webp",
+    "width": 700,
+    "height": 700
+  },
   "datePublished": "2020-02-09",
   "dateModified": "2020-02-09",
   "description": "&ndash; Mit gondolsz, melyik gyorsabb: a postagalamb vagy a ló? &ndash; Gyalog a ló&hellip;",

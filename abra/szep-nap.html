@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">Szép nap</h1>
-    <img src="../asset/img/abra/szep-nap.webp" alt="Szép nap" onerror="this.onerror=null; this.src='asset/img/abra/szep-nap.png'">
+    <img src="../asset/img/abra/szep-nap.webp" alt="Szép nap" onerror="this.onerror=null; this.src='asset/img/abra/szep-nap.png'" width="700" height="454">
     <p class="image-description">Szép napot! (reggeli firka a feleségemnek)</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/szep-nap.html"
   },
   "headline": "Szép nap",
-  "image": "https://www.abras-cet.hu/asset/img/abra/szep-nap.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/szep-nap.webp",
+    "width": 700,
+    "height": 454
+  },
   "datePublished": "2018-10-13",
   "dateModified": "2018-10-13",
   "description": "Szép napot! (reggeli firka a feleségemnek)",

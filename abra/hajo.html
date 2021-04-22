@@ -31,7 +31,7 @@
 <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/">
-      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'">
+      <img src="../asset/img/site/abras-cet-logo.webp" class="img" alt="Ábrás Cet" onerror="this.onerror=null; this.src='../asset/img/site/abras-cet-logo.png'" width="600" height="128">
     </a>
     <a id="navigation-toggle" class="navigation-toggle float-right" href="#">&equiv;</a>
     <ul id="navigation-list" class="navigation-list float-right">
@@ -47,7 +47,7 @@
 <section class="container">
   <div class="image-container">
     <h1 class="image-title">Hajó</h1>
-    <img src="../asset/img/abra/hajo.webp" alt="Hajó" onerror="this.onerror=null; this.src='asset/img/abra/hajo.jpg'">
+    <img src="../asset/img/abra/hajo.webp" alt="Hajó" onerror="this.onerror=null; this.src='asset/img/abra/hajo.jpg'" width="700" height="393">
     <p class="image-description">Akkor jó a jó hajó, ha jó a jó hajó hajóvitorlája. (üzenőtábla rajz)</p>
   </div>
   <div class="pagination">
@@ -94,7 +94,12 @@
     "@id": "https://www.abras-cet.hu/abra/hajo.html"
   },
   "headline": "Hajó",
-  "image": "https://www.abras-cet.hu/asset/img/abra/hajo.webp",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.abras-cet.hu/asset/img/abra/hajo.webp",
+    "width": 700,
+    "height": 393
+  },
   "datePublished": "2018-11-09",
   "dateModified": "2018-11-09",
   "description": "Akkor jó a jó hajó, ha jó a jó hajó hajóvitorlája. (üzenőtábla rajz)",
