@@ -64,6 +64,10 @@ class Page
     end
   end
 
+  def decode_html_entities(text)
+    text.gsub('&ndash;', "\u2013").gsub('&hellip;', "\u2026")
+  end
+
   def generate(site_model)
     puts "Generating: id:#{@id}, template:#{@template}, link:#{@link}"
     @model = site_model.merge(@model)
