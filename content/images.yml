@@ -12,7 +12,7 @@
 ---
 furkos-botond:
   title: Furkós Botond
-  description: A név kötelez?
+  description: "&ndash; Mit tesznek a bunkó emberek télen a kocsijuk kerekére? &ndash; Tahóláncot."
   image: asset/img/abra/furkos-botond.png
   date: 2021-04-20
 bastya:
@@ -47,12 +47,12 @@ polip:
   date: 2019-08-23
 hamburger:
   title: Hamburger
-  description: "Mi az, amikor a hamburger mosolyog? Kaján vigyor."
+  description: "&ndash; Mi az, amikor a hamburger mosolyog? &ndash; Kaján vigyor."
   image: asset/img/abra/hamburger.png
   date: 2019-07-14
 mez:
   title: Méz
-  description: Méz és maci
+  description: "Ha egyszer a mézet megszagolta a medve, abba sem hagyja. &ndash; magyar közmondás"
   image: asset/img/abra/mez.png
   date: 2019-07-07
 meleg:
@@ -77,17 +77,17 @@ halaszle:
   date: 2019-05-11
 majom:
   title: Majom
-  description: Majom az ebédjével
+  description: "Nem tudom mit tartogat ez a nap, de maki derül."
   image: asset/img/abra/majom.png
   date: 2019-04-13
 elefant:
   title: Elefánt
-  description: "Honnan tudod hogy az elefánt fönn van a fán? A fának van támasztva a biciklije."
+  description: "&ndash; Honnan tudod hogy az elefánt fönn van a fán? &ndash; A fának van támasztva a biciklije."
   image: asset/img/abra/elefant.png
   date: 2019-03-29
 kutya:
   title: Kutya
-  description: "Két bolha beszélget: - Te mit csinálnál, ha nyernél a lottón? - Hát, először is vennék egy jó nagy kutyát!"
+  description: "Két bolha beszélget: &ndash; Te mit csinálnál, ha nyernél a lottón? &ndash; Hát, először is vennék egy jó nagy kutyát!"
   image: asset/img/abra/kutya.png
   date: 2019-03-23
 homokvar:
@@ -107,12 +107,12 @@ haz:
   date: 2019-01-19
 jeg:
   title: Jég
-  description: Hogy hívják az eszkimó programozót? Jégkocka.
+  description: "&ndash; Hogy hívják az eszkimó programozót? &ndash; Jégkocka."
   image: asset/img/abra/jeg.png
   date: 2019-01-12
 kaktusz:
   title: Kaktusz
-  description: Majdcsak kilyukadunk valahol! - mondta a lufi a mexikói kaktuszmezőn
+  description: "Majdcsak kilyukadunk valahol! &ndash; mondta a lufi a mexikói kaktuszmezőn"
   image: asset/img/abra/kaktusz.png
   date: 2019-01-04
 buek:
@@ -132,7 +132,7 @@ kalocsai-minta:
   date: 2018-12-16
 urhajo:
   title: Űrhajó
-  description: Mit csinál a szomjas űrhajós? Űrkutatás.
+  description: "&ndash; Mit csinál a szomjas űrhajós? &ndash; Űrkutatás."
   image: asset/img/abra/urhajo.png
   date: 2018-12-08
 narancsle:
@@ -272,6 +272,6 @@ alma:
   date: 2018-05-21
 abras-cet:
   title: Ábrás Cet
-  description: Hogy hívják a tetovált bálnát?
+  description: "&ndash; Hogy hívják a tetovált bálnát? &ndash; Ábrás cet."
   image: asset/img/abra/abras-cet.png
   date: 2018-05-21
