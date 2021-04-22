@@ -10,6 +10,7 @@
        url('../font/pangolin-v3-latin-ext_latin-regular.woff') format('woff'),
        url('../font/pangolin-v3-latin-ext_latin-regular.ttf') format('truetype'),
        url('../font/pangolin-v3-latin-ext_latin-regular.svg#Pangolin') format('svg');
+  font-display: swap;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
