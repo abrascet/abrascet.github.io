@@ -31,7 +31,10 @@
     }
   }
 
-  navigationToggle.addEventListener("click", navigationToggleHandler);
-  window.addEventListener("resize", navigationResizeHandler);
-
+  if (!!navigationToggle) {
+    navigationToggle.addEventListener("click", navigationToggleHandler);
+  }
+  if (!!navigationList) {
+    window.addEventListener("resize", navigationResizeHandler);
+  }
 })();
