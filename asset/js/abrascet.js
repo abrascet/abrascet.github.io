@@ -1,4 +1,6 @@
 /*! Abras Cet, Copyright 2018 Gabor Bata */
+
+// navigation toggle for mobile view
 (function() {
   var navigationToggle = document.getElementById("navigation-toggle");
   var navigationList = document.getElementById("navigation-list");
@@ -61,4 +63,22 @@
       navigateWithButton(2);
     }
   };
+})();
+
+// cookie consent
+(function() {
+  var consentStatus = window.localStorage.getItem("consent.status");
+  var footer = document.getElementsByTagName("footer");
+  footer = footer.length > 0 ? footer[0] : null;
+  if (consentStatus != "1" && !!footer) {
+    var message = "Az oldalon történő látogatása során cookie-kat használunk, melyek információkat szolgáltatnak számunkra a felhasználó oldallátogatási szokásairól, de nem tárolnak személyes információkat. Az oldalon történő továbblépéssel elfogadja a cookie-k használatát.";
+    var consentContainer = document.createElement("div");
+    consentContainer.style.cssText = "margin:.4em;padding:.9em;max-width:24em;position:fixed;bottom:0;right:0;overflow:hidden;color:#ffffff;background:#252e39;z-index:1999;";
+    consentContainer.innerHTML = '<div>' + message + '</div><a id="consent-close" class="button" style="margin:1em 0 0 0;width:100%;" href="#">Bezár</a>';
+    footer.appendChild(consentContainer);
+    document.getElementById("consent-close").addEventListener("click", function() {
+      window.localStorage.setItem("consent.status", "1");
+      consentContainer.remove();
+    });
+  }
 })();

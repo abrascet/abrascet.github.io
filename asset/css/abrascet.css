@@ -829,6 +829,7 @@ img {
 
 .navigation .img {
   height: 4.8rem;
+  min-width: 22.5rem;
   position: relative;
   top: .2rem;
   width: auto;
