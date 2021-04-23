@@ -76,7 +76,8 @@
     consentContainer.style.cssText = "margin:.4em;padding:.9em;max-width:24em;position:fixed;bottom:0;right:0;overflow:hidden;color:#ffffff;background:#252e39;z-index:1999;";
     consentContainer.innerHTML = '<div>' + message + '</div><a id="consent-close" class="button" style="margin:1em 0 0 0;width:100%;" href="#">Bezár</a>';
     footer.appendChild(consentContainer);
-    document.getElementById("consent-close").addEventListener("click", function() {
+    document.getElementById("consent-close").addEventListener("click", function(event) {
+      event.preventDefault();
       window.localStorage.setItem("consent.status", "1");
       consentContainer.remove();
     });
