@@ -38,3 +38,27 @@
     window.addEventListener("resize", navigationResizeHandler);
   }
 })();
+
+// keyboard navigation
+(function() {
+  var pagination = document.getElementsByClassName('pagination');
+  pagination = pagination.length > 0 ? pagination[0] : null;
+
+  function navigateWithButton(idx) {
+    var href = pagination.getElementsByClassName('button')[idx].href;
+    if (!!href) {
+      window.location = href;
+    }
+  }
+
+  document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (!pagination || evt.target.nodeName == 'INPUT' || evt.altKey || evt.shiftKey || evt.ctrlKey || evt.metaKey) {
+      return;
+    } else if (evt.keyCode == 37) {
+      navigateWithButton(1);
+    } else if (evt.keyCode == 39) {
+      navigateWithButton(2);
+    }
+  };
+})();
