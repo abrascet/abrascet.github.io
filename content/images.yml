@@ -5,11 +5,17 @@
 # torta +
 # toll +
 # laptop +
-# kivi +
 # iskolataska +
 # bacsi +
 # pezsgo +
 ---
+kivi:
+  title: Kivi
+  description: "&ndash; A bútorszállítók hová tették a szekrényt? &ndash; Kivitettem velük. &ndash; És ízlett?"
+  image: asset/img/abra/kivi.png
+  date: 2021-10-11
+  width: 700
+  height: 700
 furkos-botond:
   title: Furkós Botond
   description: "&ndash; Mit tesznek a bunkó emberek télen a kocsijuk kerekére? &ndash; Tahóláncot."
