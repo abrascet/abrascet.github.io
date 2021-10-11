@@ -904,12 +904,6 @@ img {
   text-align: center;
 }
 
-@media (min-width: 47rem) {
-  .archive-list {
-    columns: 2;
-  }
-}
-
 @media (min-width: 40rem) {
   .navigation {
     height: 7rem;
@@ -948,6 +942,12 @@ img {
     display: inline;
   }
 
+  .archive-list {
+    columns: 2;
+  }
+}
+
+@media (min-width: 47rem) {
   .archive-list {
     columns: 3;
   }
