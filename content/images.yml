@@ -1,7 +1,6 @@
 # Images: new entries come first
 # csirke +
 # tengerjaro-hajo +
-# taxi +
 # torta +
 # toll +
 # laptop +
@@ -9,6 +8,13 @@
 # bacsi +
 # pezsgo +
 ---
+taxi:
+  title: Taxi
+  description: "A részeg megállítja a taxit: &ndash; Befér ide egy láda sör meg két kiló virsli? &ndash; Be. &ndash; Beeeeöööhhh"
+  image: asset/img/abra/taxi.png
+  date: 2021-11-29
+  width: 700
+  height: 700
 kivi:
   title: Kivi
   description: "&ndash; A bútorszállítók hová tették a szekrényt? &ndash; Kivitettem velük. &ndash; És ízlett?"
