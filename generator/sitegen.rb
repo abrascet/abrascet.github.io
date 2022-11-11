@@ -46,7 +46,7 @@ class Page
     File.open(File.expand_path("../template/#{template_path}"), "r:UTF-8") do |file|
       template_content = file.read
     end
-    template = ERB.new(template_content, nil, "-")
+    template = ERB.new(template_content, trim_mode: "-")
     template.result(binding)
   end
 
@@ -82,7 +82,7 @@ end
 def create_image_pages()
   pages = []
   previous_page = nil
-  YAML.load_file("../content/images.yml").each do |key, model|
+  YAML.load_file("../content/images.yml", aliases: true).each do |key, model|
     model['fallback'] = model['image']
     model['image'] = model['image'].sub(File.extname(model['image']), '.webp')
     current_page = Page.new(key, "image.erb", model, "abra")
@@ -102,7 +102,7 @@ def create_image_pages()
 end
 
 def create_home_page(image_pages)
-  model = YAML.load_file("../content/home.yml")
+  model = YAML.load_file("../content/home.yml", aliases: true)
   model = image_pages.first.model.merge(model)
   # Let Google decide which page to index
   # model["meta"] = {} if model["meta"].nil?
@@ -111,13 +111,13 @@ def create_home_page(image_pages)
 end
 
 def create_archive_page(image_pages)
-  model = YAML.load_file("../content/archive.yml")
+  model = YAML.load_file("../content/archive.yml", aliases: true)
   model["image_pages"] = image_pages
   Page.new("archiv", "archive.erb", model)
 end
 
 def create_about_page()
-  model = YAML.load_file("../content/about.yml")
+  model = YAML.load_file("../content/about.yml", aliases: true)
   Page.new("a-cetrol", "about.erb", model)
 end
 
@@ -138,7 +138,7 @@ archive_page = create_archive_page(image_pages)
 about_page = create_about_page()
 
 # Load site model
-site_model = YAML.load_file("../content/site.yml")
+site_model = YAML.load_file("../content/site.yml", aliases: true)
 site_model["pages"] = {
   "home" => home_page,
   "archive" => archive_page,

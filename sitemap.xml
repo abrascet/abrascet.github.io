@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.abras-cet.hu/abra/bacsi.html</loc>
+    <image:image>
+      <image:loc>https://www.abras-cet.hu/asset/img/abra/bacsi.webp</image:loc>
+      <image:title>Bácsi</image:title>
+      <image:caption>– Öregapám, látott már antennát? – Hát láttam is… meg ettem is… – De hát az fémből van. – Akkor csak láttam…</image:caption>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.hu</image:license>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.abras-cet.hu/abra/taxi.html</loc>
     <image:image>
       <image:loc>https://www.abras-cet.hu/asset/img/abra/taxi.webp</image:loc>
