@@ -2,11 +2,17 @@
 # ------------------------------
 # tengerjaro-hajo +
 # torta +
-# toll +
 # laptop +
 # iskolataska +
 # pezsgo +
 ---
+toll:
+  title: Toll
+  description: "&ndash; Hogy hívják a félénk tolltartót? &ndash; Attól-tartó&hellip;"
+  image: asset/img/abra/toll.png
+  date: 2024-01-30
+  width: 700
+  height: 700
 domb:
   title: Domb
   description: "Minden kakas úr a maga szemétdombján."

@@ -28,6 +28,7 @@
 
 require "erb"
 require "yaml"
+require "date"
 
 class Page
   attr_reader :model, :link
@@ -79,10 +80,20 @@ class Page
   end
 end
 
+def load_yml(path)
+  begin
+    YAML.load_file(path, aliases: true, permitted_classes: [Date])
+  rescue => error
+    # fallback to ruby 3.0 behaviour
+    puts "Warning: load_yml(#{path}): #{error.message}"
+    YAML.load_file(path)
+  end
+end
+
 def create_image_pages()
   pages = []
   previous_page = nil
-  YAML.load_file("../content/images.yml", aliases: true).each do |key, model|
+  load_yml("../content/images.yml").each do |key, model|
     model['fallback'] = model['image']
     model['image'] = model['image'].sub(File.extname(model['image']), '.webp')
     current_page = Page.new(key, "image.erb", model, "abra")
@@ -102,7 +113,7 @@ def create_image_pages()
 end
 
 def create_home_page(image_pages)
-  model = YAML.load_file("../content/home.yml", aliases: true)
+  model = load_yml("../content/home.yml")
   model = image_pages.first.model.merge(model)
   # Let Google decide which page to index
   # model["meta"] = {} if model["meta"].nil?
@@ -111,13 +122,13 @@ def create_home_page(image_pages)
 end
 
 def create_archive_page(image_pages)
-  model = YAML.load_file("../content/archive.yml", aliases: true)
+  model = load_yml("../content/archive.yml")
   model["image_pages"] = image_pages
   Page.new("archiv", "archive.erb", model)
 end
 
 def create_about_page()
-  model = YAML.load_file("../content/about.yml", aliases: true)
+  model = load_yml("../content/about.yml")
   Page.new("a-cetrol", "about.erb", model)
 end
 
@@ -138,7 +149,7 @@ archive_page = create_archive_page(image_pages)
 about_page = create_about_page()
 
 # Load site model
-site_model = YAML.load_file("../content/site.yml", aliases: true)
+site_model = load_yml("../content/site.yml")
 site_model["pages"] = {
   "home" => home_page,
   "archive" => archive_page,
